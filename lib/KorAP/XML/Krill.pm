@@ -15,7 +15,7 @@ use Mojo::DOM;
 use Data::Dumper;
 use File::Spec::Functions qw/catdir catfile catpath splitdir splitpath rel2abs/;
 
-our $VERSION = '0.20';
+our $VERSION = '0.21';
 
 has 'path';
 has [qw/text_sigle doc_sigle corpus_sigle/];
@@ -66,7 +66,6 @@ sub parse {
   }
 
   else {
-
     # Load file
     $file = b($data_xml)->slurp;
     try {
@@ -109,7 +108,7 @@ sub parse {
     $self->log->warn($unable . ': No primary data found');
     return;
   };
-
+  
   # Associate primary data
   $self->{pd} = KorAP::XML::Document::Primary->new($pd);
 
@@ -119,7 +118,8 @@ sub parse {
   # Parse the corpus file, the doc file,
   # and the text file for meta information
   foreach (0..2) {
-    unshift @header, '/' . catfile(@path, 'header.xml');
+    # Removed starting '/'
+    unshift @header, catfile(@path, 'header.xml');
     pop @path;
   };
 

@@ -6,7 +6,7 @@ use File::Basename 'dirname';
 use File::Spec::Functions qw/catfile catdir/;
 use File::Temp qw/tempdir/;
 
-use_ok('KorAP::XML::Archive');
+use KorAP::XML::Archive;
 
 my $name = 'wpd15-single';
 my @path = (dirname(__FILE__), 'corpus','archives');
@@ -15,7 +15,7 @@ my $file = catfile(@path, $name . '.zip');
 my $archive = KorAP::XML::Archive->new($file);
 
 unless ($archive->test_unzip) {
-  plan skip_all => 'unzip not found';
+    plan skip_all => 'unzip not found';
 };
 
 ok($archive->test, 'Test archive');

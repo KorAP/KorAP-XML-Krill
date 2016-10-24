@@ -77,7 +77,7 @@ sub process {
       $file = IO::Compress::Gzip->new($output, TextFlag => 1, Minimal => 1);
     }
     else {
-      $file = IO::File->new($output, "w");
+      $file = IO::File->new($output, "w"); # '>:encoding(UTF-8)'); # "w");
     };
 
     # Write to output

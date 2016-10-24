@@ -1,5 +1,7 @@
 package KorAP::XML::Annotation::Glemm::Morpho;
 use KorAP::XML::Annotation::Base;
+use strict;
+use warnings;
 
 sub parse {
   my $self = shift;
@@ -9,15 +11,16 @@ sub parse {
     layer => 'morpho',
     cb => sub {
       my ($stream, $token) = @_;
+
       my $mtt = $stream->pos($token->pos);
 
-      my $content = $token->hash->{fs}->{f} or return;
+      my $content = $token->hash->{'fs'}->{'f'} or return;
 
       # All interpretations
       foreach (ref $content eq 'ARRAY' ? @$content : $content) {
 
 	# All features
-	$content = $_->{fs}->{f};
+	$content = $_->{'fs'}->{'f'};
 
 	my $lemma;
 	my ($composition, $derivation) = (0,0);

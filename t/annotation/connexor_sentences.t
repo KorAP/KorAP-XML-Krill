@@ -17,7 +17,7 @@ ok(my $doc = KorAP::XML::Krill->new(
   path => $path . '/'
 ), 'Load Korap::Document');
 
-like($doc->path, qr!$path/$!, 'Path');
+like($doc->path, qr!\Q$path\E/$!, 'Path');
 ok($doc->parse, 'Parse document');
 
 ok($doc->primary->data, 'Primary data in existence');

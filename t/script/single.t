@@ -72,6 +72,7 @@ my $gz = IO::Uncompress::Gunzip->new($output, Transparent => 0);
 while ($gz->read($buffer)) {
   $file .= $buffer;
 };
+$gz->close;
 
 ok($json = decode_json($file), 'decode json');
 
@@ -83,8 +84,8 @@ like($json->{data}->{text}, qr/^Zum letzten kulturellen/, 'Foundries');
 is($json->{data}->{stream}->[0]->[0], '-:base/paragraphs$<i>1', 'Paragraphs');
 
 # Delete output
-unlink $output;
-ok(!-f $output, 'Output does not exist');
+is(unlink($output), 1, 'Unlink successful');
+ok(!-e $output, 'Output does not exist');
 
 # Use a different token source and skip all annotations,
 # except for DeReKo#Structure and Mate#Dependency

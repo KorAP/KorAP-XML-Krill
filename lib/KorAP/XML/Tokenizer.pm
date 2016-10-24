@@ -336,7 +336,6 @@ sub add_tokendata {
     return;
   };
 
-
   $self->log->trace(
     ($param{skip} ? 'Skip' : 'Add').' token data '.$param{foundry}.':'.$param{layer}
   );
@@ -397,8 +396,9 @@ sub add {
   my $mod = 'KorAP::XML::Annotation::' . $foundry . '::' . $layer;
 
   if ($mod->can('new') || eval("require $mod; 1;")) {
-
-    if (my $retval = $mod->new($self)->parse(@_)) {
+      my $obj = $mod->new($self);
+      
+      if (my $retval = $obj->parse(@_)) {
 
       # This layer is supported
       $self->support($foundry => $layer, @_);

@@ -3,6 +3,7 @@ use warnings;
 use Test::More;
 use Data::Dumper;
 use JSON::XS;
+use Log::Log4perl;
 
 use Benchmark qw/:hireswallclock/;
 
@@ -11,12 +12,19 @@ my $t = Benchmark->new;
 use utf8;
 use lib 'lib', '../lib';
 
+#Log::Log4perl->init({
+#  'log4perl.rootLogger' => 'DEBUG, STDERR',
+#  'log4perl.appender.STDERR' => 'Log::Log4perl::Appender::ScreenColoredLevels',
+#  'log4perl.appender.STDERR.layout' => 'PatternLayout',
+#  'log4perl.appender.STDERR.layout.ConversionPattern' => '[%r] %F %L %c - %m%n'
+#});
+
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 
 use_ok('KorAP::XML::Krill');
 
-my $path = catdir(dirname(__FILE__), '../corpus/BZK/D59/00001');
+my $path = catdir(dirname(__FILE__), '..', 'corpus', 'BZK', 'D59', '00001');
 
 ok(my $doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
 ok($doc->parse, 'Parse document');
