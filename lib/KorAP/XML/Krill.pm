@@ -119,6 +119,7 @@ sub parse {
   # and the text file for meta information
   foreach (0..2) {
     # Removed starting '/'
+
     unshift @header, catfile(rootdir(), @path, 'header.xml');
     pop @path;
   };
