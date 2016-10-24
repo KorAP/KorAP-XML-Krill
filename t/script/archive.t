@@ -10,6 +10,7 @@ use IO::Uncompress::Gunzip;
 use Test::More;
 use Test::Output qw/:stdout :stderr :functions/;
 use Data::Dumper;
+use KorAP::XML::Archive;
 use utf8;
 
 my $f = dirname(__FILE__);
@@ -20,6 +21,10 @@ my $call = join(
   'perl', $script,
   'archive'
 );
+
+unless (KorAP::XML::Archive::test_unzip) {
+  plan skip_all => 'unzip not found';
+};
 
 # Test without parameters
 stdout_like(

@@ -15,7 +15,7 @@ my $path = catdir(dirname(__FILE__), 'corpus', 'doc', '0001');
 
 ok(my $doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::XML::Krill');
 ok($doc->parse, 'Parse document');
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 is($doc->primary->data,
    'Zum letzten kulturellen Anlass lädt die Leitung des Schulheimes Hofbergli ein, '.

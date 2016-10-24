@@ -1,3 +1,6 @@
+0.21 2016-10-14
+        - Improved Windows support
+
 0.20 2016-10-15
         - Fixed treatment of temporary folders in script
 

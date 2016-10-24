@@ -20,16 +20,22 @@ use Data::Dumper;
 use lib 't/annotation';
 use File::Temp qw/tempdir/;
 
-use_ok('KorAP::XML::Annotation::MDParser::Dependency');
-use_ok('KorAP::XML::Archive');
-use_ok('KorAP::XML::Krill');
-use_ok('KorAP::XML::Tokenizer');
+use KorAP::XML::Archive;
 
 my $name = 'wpd15-single';
 my @path = (dirname(__FILE__), '..', 'corpus','archives');
 
 my $file = catfile(@path, $name . '.zip');
-ok(my $archive = KorAP::XML::Archive->new($file), 'Create archive');
+my $archive = KorAP::XML::Archive->new($file);
+
+unless ($archive->test_unzip) {
+  plan skip_all => 'unzip not found';
+};
+
+use_ok('KorAP::XML::Annotation::MDParser::Dependency');
+use_ok('KorAP::XML::Krill');
+use_ok('KorAP::XML::Tokenizer');
+
 
 ok($archive->attach('#' . catfile(@path, $name . '.mdparser.zip')), 'Attach mdparser archive');
 

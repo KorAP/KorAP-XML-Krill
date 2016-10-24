@@ -112,7 +112,7 @@ $bf->{pretty} = 1;
 ok($bf->process($path => $output), 'Process file');
 ok(-f $output, 'File exists');
 ok($file = slurp $output, 'Slurp data');
-like($file, qr/^\{\n\s+"/, 'No pretty printing');
+like($file, qr/^\{[\n\s]+"/, 'No pretty printing');
 
 # Check overwriting
 $bf->{overwrite} = 0;

@@ -70,10 +70,10 @@ push(@layers, ['XIP', 'Sentences']);
 
 my $path = catdir(dirname(__FILE__), 'corpus/WPD/00001');
 ok(my $doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
-like($doc->path, qr!$path/$!, 'Path');
+like($doc->path, qr!\Q$path\E/$!, 'Path');
 
 ok($doc = KorAP::XML::Krill->new( path => $path ), 'Load Korap::Document');
-like($doc->path, qr!$path/$!, 'Path');
+like($doc->path, qr!\Q$path\E/$!, 'Path');
 
 ok($doc->parse, 'Parse document');
 
@@ -106,7 +106,7 @@ ok(my $tokens = KorAP::XML::Tokenizer->new(
 ), 'New Tokenizer');
 ok($tokens->parse, 'Parse');
 
-like($tokens->path, qr!$path/$!, 'Path');
+like($tokens->path, qr!\Q$path\E/$!, 'Path');
 is($tokens->foundry, 'OpenNLP', 'Foundry');
 is($tokens->doc->text_sigle, 'WPD/AAA/00001', 'Doc id');
 is($tokens->should, 1068, 'Should');

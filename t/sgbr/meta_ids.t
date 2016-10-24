@@ -17,7 +17,7 @@ ok(my $doc = KorAP::XML::Krill->new(
 
 ok($doc->parse, 'Parse document');
 
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 # Metdata
 is($doc->text_sigle, 'CMC-TSK/2014-09/2843', 'ID-text');
@@ -85,7 +85,7 @@ ok($doc = KorAP::XML::Krill->new(
 
 ok($doc->parse, 'Parse document');
 
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 # Metdata
 is($doc->text_sigle, 'CMC-TSK/2014-09/3401', 'ID-text');

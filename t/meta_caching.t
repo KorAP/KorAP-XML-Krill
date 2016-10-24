@@ -26,7 +26,7 @@ ok(my $doc = KorAP::XML::Krill->new(
   cache => $cache
 ), 'Get doc');
 
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 ok(!$cache->get('REI'), 'No REI set');
 ok(!$cache->get('REI/BNG'), 'No REI/BNG set');

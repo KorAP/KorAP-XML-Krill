@@ -65,11 +65,14 @@ use Parallel::ForkManager;
 # - Added MDParser#Dependency
 #
 # 2016/10/15
-# - Fixed temporary path issue in script.
+# - Fixed temporary path issue in script
+#
+# 2016/10/24
+# - Improved Windows support
 #
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2016/10/15';
+our $LAST_CHANGE = '2016/10/24';
 our $LOCAL = $FindBin::Bin;
 our $VERSION_MSG = <<"VERSION";
 Version $KorAP::XML::Krill::VERSION - diewald\@ids-mannheim.de - $LAST_CHANGE

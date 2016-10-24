@@ -6,7 +6,7 @@ use File::Basename 'dirname';
 use File::Spec::Functions qw/catfile catdir/;
 use File::Temp qw/tempdir/;
 
-use_ok('KorAP::XML::Archive');
+use KorAP::XML::Archive;
 
 my $file = catfile(dirname(__FILE__), 'corpus','archive.zip');
 my $archive = KorAP::XML::Archive->new($file);

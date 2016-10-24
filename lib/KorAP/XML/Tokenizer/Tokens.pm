@@ -3,6 +3,7 @@ use Mojo::Base 'KorAP::XML::Tokenizer::Units';
 use Mojo::ByteStream 'b';
 use KorAP::XML::Tokenizer::Token;
 use Carp qw/croak carp/;
+use File::Spec::Functions qw/catdir catfile/;
 use XML::Fast;
 use Try::Tiny;
 
@@ -13,7 +14,8 @@ has 'log' => sub {
 sub parse {
   my $self = shift;
 
-  my $path = $self->path . $self->foundry . '/' . $self->layer . '.xml';
+  # my $path = $self->path . $self->foundry . '/' . $self->layer . '.xml';
+  my $path = catfile($self->path, $self->foundry, $self->layer . '.xml');
 
   # Legacy data support
   unless (-e $path) {
@@ -22,7 +24,7 @@ sub parse {
       return unless -e $path;
     }
     elsif ($self->layer eq 'morpho' && $self->foundry eq 'glemm') {
-      $path = $self->path . $self->foundry . '/glemm.xml';
+      $path = catfile($self->path, $self->foundry, 'glemm.xml');
       return unless -e $path;
     }
     else {
@@ -34,8 +36,8 @@ sub parse {
 
   # Bug workaround
   if ($self->foundry eq 'glemm') {
-    if (index($file, "</span\n") > 0) {
-      $file =~ s!</span$!</span>!gm
+    if (index($file, "</span\n") > 0 || index($file, "</span\r") > 0) {
+	$file =~ s!</span[\n\r]!</span>\n!g;
     };
   };
 

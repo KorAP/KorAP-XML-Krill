@@ -16,10 +16,10 @@ use_ok('KorAP::XML::Krill');
 # WPD/00001
 my $path = catdir(dirname(__FILE__), 'corpus/WPD/00001');
 ok(my $doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 ok($doc = KorAP::XML::Krill->new( path => $path ), 'Load Korap::Document');
-like($doc->path, qr!$path/$!, 'Path');
+like($doc->path, qr!\Q$path\E/$!, 'Path');
 
 ok($doc->parse, 'Parse document');
 
@@ -28,6 +28,7 @@ is($doc->text_sigle, 'WPD/AAA/00001', 'ID');
 
 my $meta = $doc->meta;
 is($meta->{title}, 'A', 'title');
+
 ok(!$meta->{sub_title}, 'subTitle');
 is($doc->corpus_sigle, 'WPD', 'corpusID');
 is($meta->{pub_date}, '20050328', 'pubDate');
@@ -38,6 +39,7 @@ is($meta->{text_class}->[2], 'wissenschaft', 'TextClass');
 is($meta->{text_class}->[3], 'populaerwissenschaft', 'TextClass');
 ok(!$meta->{text_class}->[4], 'TextClass');
 is($meta->{author}, 'Ruru; Jens.Ol; Aglarech; u.a.', 'author');
+
 
 #is($doc->author->[0], 'Ruru', 'author');
 #is($doc->author->[1], 'Jens.Ol', 'author');
@@ -286,10 +288,10 @@ is($meta->{text_type_art}, 'Bericht', 'text_type art');
 # Multipath headers
 $path = catdir(dirname(__FILE__), 'corpus/VDI/JAN/00001');
 ok($doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 ok($doc = KorAP::XML::Krill->new( path => $path ), 'Load Korap::Document');
-like($doc->path, qr!$path/$!, 'Path');
+like($doc->path, qr!\Q$path\E/$!, 'Path');
 
 ok($doc->parse, 'Parse document');
 $meta = $doc->meta;
@@ -339,7 +341,7 @@ is($meta->keywords('text_class'), 'Freizeit-Unterhaltung Reisen Politik Ausland'
 # WDD
 $path = catdir(dirname(__FILE__), 'corpus/WDD/G27/38989');
 ok($doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 ok($doc->parse, 'Parse document');
 $meta = $doc->meta;
 

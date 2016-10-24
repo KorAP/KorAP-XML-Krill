@@ -16,7 +16,7 @@ my $path = catdir(dirname(__FILE__), 'corpus', 'doc', '0001');
 
 ok(my $doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
 ok($doc->parse, 'Parse document');
-like($doc->path, qr!$path/!, 'Path');
+like($doc->path, qr!\Q$path\E/!, 'Path');
 
 # Metdata
 is($doc->text_sigle, 'Corpus/Doc/0001', 'ID-text');
