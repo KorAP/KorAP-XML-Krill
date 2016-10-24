@@ -13,7 +13,7 @@ use KorAP::XML::Log;
 use Cache::FastMmap;
 use Mojo::DOM;
 use Data::Dumper;
-use File::Spec::Functions qw/catdir catfile catpath splitdir splitpath rel2abs/;
+use File::Spec::Functions qw/catdir catfile catpath splitdir splitpath rel2abs rootdir/;
 
 our $VERSION = '0.21';
 
@@ -108,7 +108,7 @@ sub parse {
     $self->log->warn($unable . ': No primary data found');
     return;
   };
-  
+
   # Associate primary data
   $self->{pd} = KorAP::XML::Document::Primary->new($pd);
 
@@ -119,7 +119,7 @@ sub parse {
   # and the text file for meta information
   foreach (0..2) {
     # Removed starting '/'
-    unshift @header, catfile(@path, 'header.xml');
+    unshift @header, catfile(rootdir(), @path, 'header.xml');
     pop @path;
   };
 
