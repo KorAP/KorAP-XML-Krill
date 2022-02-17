@@ -1,3 +1,5 @@
+__END__
+
 =pod
 
 =encoding utf8
@@ -392,6 +394,9 @@ L<Krill|https://github.com/KorAP/Krill>.
     #Morpho
     #NamedEntities
     #Sentences
+
+  CorpusExplorer
+    #Morpho
 
   CMC
     #Morpho

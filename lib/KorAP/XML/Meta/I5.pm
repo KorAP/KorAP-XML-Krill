@@ -291,6 +291,10 @@ sub parse {
           $key = 'A_';
           my $title = $_->att('desc');
           $value = $self->korap_data_uri($value, title => ($title // $value));
+        } elsif ($xtype eq 'number') {
+          $self->log->warn('Number currently not supported as xenodata type, treated as string');
+          $key = 'S_';
+          # Maybe render as Integer - but it's understood as a string
         } else {
           $self->log->warn('Unknown xenodata type: ' . $xtype);
           return;
