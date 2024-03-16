@@ -171,9 +171,12 @@ use Fcntl qw(:flock SEEK_END);
 # 2023/02/13
 # - Fix temporary-extract handling from configuration file.
 #
+# 2024/03/20
+# - Added Spacy support.
+#
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2023/05/16';
+our $LAST_CHANGE = '2024/03/20';
 our $LOCAL = $FindBin::Bin;
 our $KORAL_VERSION = 0.03;
 our $VERSION_MSG = <<"VERSION";
@@ -513,6 +516,10 @@ if ($base_sentences eq 'rwk#structure') {
 push(@layers,
      ['Sgbr', 'Lemma'],
      ['Sgbr', 'Morpho']);
+
+# Spacy
+push(@layers,
+     ['Spacy', 'Morpho']);
 
 # Talismane
 push(@layers,
@@ -1519,6 +1526,9 @@ L<Krill|https://github.com/KorAP/Krill>.
 
   Sgbr
     #Lemma
+    #Morpho
+
+  Spacy
     #Morpho
 
   Talismane

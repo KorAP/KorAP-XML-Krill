@@ -436,6 +436,9 @@ L<Krill|https://github.com/KorAP/Krill>.
     #Lemma
     #Morpho
 
+  Spacy
+    #Morpho
+
   Talismane
     #Dependency
     #Morpho
@@ -613,7 +616,7 @@ Copyright (C) 2015-2024, L<IDS Mannheim|https://www.ids-mannheim.de/>
 
 Author: L<Nils Diewald|https://www.nils-diewald.de/>
 
-Contributor: Eliza Margaretha
+Contributor: Eliza Margaretha, Marc Kupietz
 
 L<KorAP::XML::Krill> is developed as part of the L<KorAP|https://korap.ids-mannheim.de/>
 Corpus Analysis Platform at the

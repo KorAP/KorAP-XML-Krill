@@ -54,7 +54,7 @@ ok((my $json = decode_json $file), 'decode json');
 is($json->{textType}, 'Zeitung: Tageszeitung', 'text type');
 is($json->{title}, 'Beispiel Text', 'Title');
 is($json->{data}->{tokenSource}, 'opennlp#tokens', 'Title');
-is($json->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
+is($json->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences spacy spacy/morpho treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
 like($json->{data}->{text}, qr/^Zum letzten kulturellen/, 'Foundries');
 is($json->{data}->{stream}->[0]->[0], '-:base/paragraphs$<i>1', 'Paragraphs');
 is($json->{data}->{tokenSource}, 'opennlp#tokens', 'TokenSource');
@@ -87,7 +87,7 @@ ok($json = decode_json($file), 'decode json');
 is($json->{textType}, 'Zeitung: Tageszeitung', 'text type');
 is($json->{title}, 'Beispiel Text', 'Title');
 is($json->{data}->{tokenSource}, 'opennlp#tokens', 'TokenSource');
-is($json->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
+is($json->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences spacy spacy/morpho treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
 like($json->{data}->{text}, qr/^Zum letzten kulturellen/, 'Foundries');
 is($json->{data}->{stream}->[0]->[0], '-:base/paragraphs$<i>1', 'Paragraphs');
 
@@ -227,10 +227,40 @@ is($json->{fields}->[22]->{type}, 'type:text');
 is($json->{fields}->[22]->{'@type'}, 'koral:field');
 
 is($json->{data}->{tokenSource}, 'opennlp#tokens', 'Title');
-is($json->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
+is($json->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences spacy spacy/morpho treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
 like($json->{data}->{text}, qr/^Zum letzten kulturellen/, 'Foundries');
 is($json->{data}->{stream}->[0]->[0], '-:base/paragraphs$<i>1', 'Paragraphs');
 is($json->{data}->{tokenSource}, 'opennlp#tokens', 'TokenSource');
+
+my $token = join(',',@{$json->{data}->{stream}->[1]});
+
+like($token, qr!<>:xip\/c:AP\$<b>64<i>4<i>11<i>2<b>5!);
+like($token, qr!<>:xip\/c:ADJ\$<b>64<i>4<i>11<i>2<b>6!);
+like($token, qr!<>:cnx\/c:np\$<b>64<i>4<i>30<i>4<b>0!);
+like($token, qr!<>:xip\/c:NP\$<b>64<i>4<i>30<i>4<b>3!);
+like($token, qr!<>:xip\/c:NPA\$<b>64<i>4<i>30<i>4<b>4!);
+like($token, qr!>:mate\/d:NK\$<b>32<i>3!);
+like($token, qr!_1\$<i>4<i>11!);
+like($token, qr!cnx\/l:letzt!);
+like($token, qr!cnx\/p:A!);
+like($token, qr!cnx\/syn:\@PREMOD!);
+like($token, qr!corenlp\/p:ADJ!);
+like($token, qr!glemm\/l:__letzt-!);
+like($token, qr!i:letzten!);
+like($token, qr!mate\/l:letzter!);
+like($token, qr!mate\/m:case:dat!);
+like($token, qr!mate\/m:degree:pos!);
+like($token, qr!mate\/m:gender:neut!);
+like($token, qr!mate\/m:number:sg!);
+like($token, qr!mate\/p:ADJA!);
+like($token, qr!opennlp\/p:ADJA!);
+like($token, qr!s:letzten!);
+like($token, qr!spacy\/l:letzter!);
+like($token, qr!spacy\/p:ADJ!);
+like($token, qr!tt\/l:letzt!);
+like($token, qr!tt\/p:ADJA!);
+like($token, qr!xip\/l:letzt!);
+like($token, qr!xip\/p:ADJ!);
 
 # Delete output
 unlink $output;

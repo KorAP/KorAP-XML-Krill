@@ -123,7 +123,7 @@ my ($json_1, $json_2);
   ok(($json_1 = decode_json $file), 'decode json');
 
   is($json_1->{data}->{tokenSource}, 'tree_tagger#tokens', 'TokenSource');
-  is($json_1->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
+  is($json_1->{data}->{foundries}, 'base base/paragraphs base/sentences connexor connexor/morpho connexor/phrase connexor/sentences connexor/syntax corenlp corenlp/constituency corenlp/morpho corenlp/sentences dereko dereko/structure glemm glemm/morpho mate mate/dependency mate/morpho opennlp opennlp/morpho opennlp/sentences spacy spacy/morpho treetagger treetagger/morpho treetagger/sentences xip xip/constituency xip/morpho xip/sentences', 'Foundries');
   is($json_1->{textSigle}, 'Corpus/Doc/0001', 'Sigle');
 
   ok(-f $json_2, 'Json file exists');
