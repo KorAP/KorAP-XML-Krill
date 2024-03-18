@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="text.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<raw_text docid="Corpus_Doc.0003" xmlns="http://ids-mannheim.de/ns/KorAP">
+  <metadata file="metadata.xml" />
+  <text>Zum letzten kulturellen Anlass lädt die Leitung des Schulheimes Hofbergli ein, bevor der Betrieb Ende Schuljahr eingestellt wird.</text>
+</raw_text>

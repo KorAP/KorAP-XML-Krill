@@ -42,8 +42,40 @@ is($data->{stream}->[11]->[5], 'tt/p:KOUS$<b>129<b>204',
 is($data->{stream}->[11]->[6], 'tt/p:PTKVZ$<b>129<b>51',
    'Lemma');
 
+is(scalar(@{$data->{stream}}), 18);
+
+
+ok($tokens = TestInit::tokens('0003'), 'Parse tokens');
+
+ok($tokens->add('TreeTagger', 'Morpho'), 'Add Structure');
+
+$data = $tokens->to_data->{data};
+
+like($data->{foundries}, qr!treetagger/morpho!, 'data');
+like($data->{layerInfos}, qr!tt/p=tokens!, 'data');
+like($data->{layerInfos}, qr!tt/l=tokens!, 'data');
+
+is($data->{stream}->[0]->[5], 'tt/l:zu+die', 'POS');
+is($data->{stream}->[0]->[6], 'tt/p:APPRART', 'POS');
+
+is($data->{stream}->[3]->[3], 'tt/l:Anlass', 'POS');
+is($data->{stream}->[3]->[4], 'tt/p:NN', 'POS');
+
+is($data->{stream}->[10]->[3], 'tt/l:ein', 'POS');
+is($data->{stream}->[10]->[4], 'tt/p:PTKVZ', 'POS');
+
+is($data->{stream}->[13]->[3], 'tt/l:Betrieb', 'POS');
+
+is($data->{stream}->[-1]->[3], 'tt/l:werden', 'POS');
+is($data->{stream}->[-1]->[4], 'tt/p:VAFIN', 'POS');
+
+is($data->{stream}->[11]->[3], 'tt/l:bevor',
+   'Lemma');
+is($data->{stream}->[11]->[4], 'tt/p:KOUS',
+   'Lemma');
+ok(!$data->{stream}->[11]->[6], 'No alternatives');
+
+is(scalar(@{$data->{stream}}), 18);
 
 done_testing;
-
 __END__
-

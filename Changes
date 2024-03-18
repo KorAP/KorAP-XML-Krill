@@ -1,5 +1,9 @@
 0.53 2023-03-20
         - Added Spacy support. (kupietz)
+        - Support 'pos' as an alternative to 'ctag'
+          in Treetagger. (kupietz)
+        - Change default certainty value in TreeTagger
+          to 1.
 
 0.52 2023-01-23
         - Introduced 'quiet' flag.

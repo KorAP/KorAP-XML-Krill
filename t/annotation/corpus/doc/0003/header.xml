@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-model href="header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE idsCorpus PUBLIC "-//IDS//DTD IDS-XCES 1.0//EN" "http://corpora.ids-mannheim.de/idsxces1/DTD/ids.xcesdoc.dtd">
+<idsHeader type="text" pattern="text" status="new" version="1.1" TEIform="teiHeader">
+  <fileDesc>
+    <titleStmt>
+      <textSigle>Corpus/Doc.Text</textSigle>
+      <t.title assemblage="regular"/>
+    </titleStmt>
+    <publicationStmt>
+      <distributor/>
+      <pubAddress/>
+      <availability region="world" status="unknown"/>
+      <pubDate/>
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <analytic>
+          <h.title type="main">Beispiel Text</h.title>
+	  <h.title type="sub">Beispiel Text Untertitel</h.title>
+          <h.author>Mustermann, Max</h.author>
+	  <editor>Monika Mustermann</editor>
+          <imprint/>
+          <biblScope type="pp"/>
+          <biblScope type="suppl"/>
+          <biblScope type="suppltitle"/>
+          <biblNote n="1"/>
+        </analytic>
+        <monogr>
+	  <h.title type="main">Beispiel Text</h.title>
+          <h.title type="sub">Best of!</h.title>
+          <h.author>Mustermann, Max</h.author>
+          <editor>Monika Mustermann</editor>
+          <imprint>
+            <publisher>Artificial articles Inc.</publisher>
+            <pubDate type="year">2001</pubDate>
+            <pubDate type="month">04</pubDate>
+            <pubDate type="day">02</pubDate>
+	    <pubPlace>Mannheim</pubPlace>
+          </imprint>
+          <biblScope type="issue"/>
+          <biblScope type="issueplace"/>
+        </monogr>
+      </biblStruct>
+      <reference type="complete" assemblage="regular"/>
+      <reference type="short" assemblage="regular"/>
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <creation>
+      <creatDate>1999.06.01</creatDate>
+    </creation>
+    <textClass>
+      <catRef n="1" target="topic.freizeit-unterhaltung.vereine-veranstaltungen" scheme="topic"/>
+      <h.keywords>
+        <keyTerm/>
+      </h.keywords>
+    </textClass>
+    <textDesc>
+      <textType>Zeitung: Tageszeitung</textType>
+      <textTypeArt>Bericht</textTypeArt>
+      <textDomain/>
+      <column/>
+    </textDesc>
+  </profileDesc>
+</idsHeader>

@@ -103,15 +103,20 @@ my ($json_1, $json_2);
   # That's not really stable on slow machines!
   my $out = stdout_from(sub { system($call); });
 
-  ok($out =~ m!\[\$(\d+?):1\/2\]!s, $call . ' pid 1');
+  ok($out =~ m!\[\$(\d+?):1\/3\]!s, $call . ' pid 1');
   my $pid1 = $1;
-  ok($out =~ m!\[\$(\d+?):2\/2\]!s, $call . ' pid 2');
+  ok($out =~ m!\[\$(\d+?):2\/3\]!s, $call . ' pid 2');
   my $pid2 = $1;
+  ok($out =~ m!\[\$(\d+?):3\/3\]!s, $call . ' pid 3');
+  my $pid3 = $1;
 
   isnt($pid1, $pid2, 'No PID match');
+  isnt($pid2, $pid3, 'No PID match');
+  isnt($pid1, $pid3, 'No PID match');
 
   ok($out =~ m!Processed .+?\/corpus-doc-0001\.json!s, $call);
   ok($out =~ m!Processed .+?\/corpus-doc-0002\.json!s, $call);
+  ok($out =~ m!Processed .+?\/corpus-doc-0003\.json!s, $call);
 
   ok(-d $output, 'Temporary directory still exists');
   my $json_1 = catfile($output, 'corpus-doc-0001.json');

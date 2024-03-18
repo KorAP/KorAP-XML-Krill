@@ -26,7 +26,7 @@ sub parse {
         $content = $fs->{fs}->{f};
 
         my @val;
-        my $certainty = 0;
+        my $certainty = 1;
         foreach (@$content) {
           if ($_->{-name} eq 'certainty') {
 
@@ -54,7 +54,7 @@ sub parse {
           };
 
           # pos
-          if (($_->{-name} eq 'ctag') && ($found = $_->{'#text'})) {
+          if (($_->{-name} eq 'ctag' || $_->{-name} eq 'pos') && ($found = $_->{'#text'})) {
             $pos{$found} += $certainty // 1;
           };
         };
