@@ -1115,7 +1115,7 @@ The C<korapxml2krill> command line tool is a simple wrapper of this library.
 
 The preferred way to install L<KorAP::XML::Krill> is to use L<cpanm|App::cpanminus>.
 
-  $ cpanm https://github.com/KorAP/KorAP-XML-Krill.git
+  cpanm https://github.com/KorAP/KorAP-XML-Krill.git
 
 In case everything went well, the C<korapxml2krill> tool will
 be available on your command line immediately.
@@ -1126,7 +1126,7 @@ In addition to work with zip archives, the C<unzip> tool needs to be present.
 
 =head1 ARGUMENTS
 
-  $ korapxml2krill -z --input <directory> --output <filename>
+  korapxml2krill -z --input <directory> --output <filename>
 
 Without arguments, C<korapxml2krill> converts a directory of a single KorAP-XML document.
 It expects the input to point to the text level folder.
@@ -1135,20 +1135,20 @@ It expects the input to point to the text level folder.
 
 =item B<archive>
 
-  $ korapxml2krill archive -z --input <directory|archive> --output <directory|tar>
+  korapxml2krill archive -z --input <directory|archive> --output <directory|tar>
 
 Converts an archive of KorAP-XML documents. It expects a directory
 (pointing to the corpus level folder) or one or more zip files as input.
 
 =item B<extract>
 
-  $ korapxml2krill extract --input <archive> --output <directory> --sigle <SIGLE>
+  korapxml2krill extract --input <archive> --output <directory> --sigle <SIGLE>
 
 Extracts KorAP-XML documents from a zip file.
 
 =item B<serial>
 
-  $ korapxml2krill serial -i <archive1> -i <archive2> -o <directory> -cfg <config-file>
+  korapxml2krill serial -i <archive1> -i <archive2> -o <directory> -cfg <config-file>
 
 Convert archives sequentially. The inputs are not merged but treated
 as they are (so they may be premerged or globs).
@@ -1159,7 +1159,7 @@ the output will be a tar file.
 
 =item B<slimlog>
 
-  $ korapxml2krill slimlog <logfile> > <logfile-slim>
+  korapxml2krill slimlog <logfile> > <logfile-slim>
 
 Filters out all useless aka succesfull information from logs, to simplify
 log checks. Expects no further options.
