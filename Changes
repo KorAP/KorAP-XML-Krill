@@ -1,6 +1,8 @@
 0.54 2023-04-15
         - Fix 'cache' parameter. (reported by kupietz)
         - Fix cache deletion for certain scenarios.
+        - Improve information on the number of jobs
+          running in parallel.
 
 0.53 2023-03-20
         - Added Spacy support. (kupietz)

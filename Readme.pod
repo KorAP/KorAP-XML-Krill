@@ -210,12 +210,20 @@ Defaults to C<0> (everything runs in a single process).
 If C<sequential-extraction> is not set to true, this will
 also apply to extraction.
 
-Pass -1, and the value will be set automatically to 5
+Pass C<-1>, and the value will be set automatically to 5
 times the number of available cores, in case L<Sys::Info>
-is available. Be aware, that the report of available cores
+is available and can read CPU count (see C<--job-count>).
+Be aware, that the report of available cores
 may not work in certain conditions. Benchmarking the processing
 speed based on the number of jobs may be valuable.
+
 This is I<experimental>.
+
+
+=item B<--job-count|-jc>
+
+Print job and core information that would be used if
+C<-1> was passed to C<--jobs>.
 
 
 =item B<--koral|-k>

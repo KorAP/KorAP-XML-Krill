@@ -174,6 +174,8 @@ use Fcntl qw(:flock SEEK_END);
 # 2024/03/20
 # - Added Spacy support.
 #
+# 2024/03/22
+# - Improve core count logging.
 # ----------------------------------------------------------
 
 our $LAST_CHANGE = '2024/04/15';
@@ -195,6 +197,26 @@ my (@skip, @sigle, @anno, @input);
 
 # Configuration hash
 my %cfg = ();
+
+# Count jobs/cores if not set
+sub count_jobs {
+  my ($cores, $jobs);
+  my $msg = 'Unable to determine number of cores - set to 1';
+  if (eval("use Sys::Info; 1;") && eval("use Sys::Info::Constants qw( :device_cpu ); 1;")) {
+    $cores = Sys::Info->new->device('CPU')->count;
+    if ($cores <= 0) {
+      $log->error($msg);
+      $cores = 1;
+    }
+  }
+  else {
+    $log->error($msg);
+    $cores = 1;
+  };
+
+  $jobs = ceil(5 * $cores);
+  return $jobs, "Run using $jobs jobs on $cores cores";
+}
 
 # Parse options from the command line
 GetOptions(
@@ -244,6 +266,14 @@ GetOptions(
     pod2usage(
       -verbose  => 0,
       -msg      => $VERSION_MSG,
+      -output   => '-'
+    ),
+  },
+  'job-count|jc' => sub {
+    my ($j, $msg) = count_jobs();
+    pod2usage(
+      -verbose  => 0,
+      -msg      => $msg,
       -output   => '-'
     )
   }
@@ -590,16 +620,8 @@ my $batch_file = KorAP::XML::Batch::File->new(
 
 # Auto adjust jobs
 if ($jobs eq '-1') {
-  my $cores = 1;
-  if (eval("use Sys::Info; 1;") && eval("use Sys::Info::Constants qw( :device_cpu ); 1;")) {
-    $cores = Sys::Info->new->device('CPU')->count;
-  }
-  else {
-    $log->warn("Unable to determine number of cores");
-  };
-
-  $jobs = ceil(5 * $cores);
-  $log->info("Run using $jobs jobs on $cores cores");
+  ($jobs, my $msg) = count_jobs();
+  print $msg . "\n" unless $q;
 };
 
 # Glob and prefix files
@@ -1296,12 +1318,20 @@ Defaults to C<0> (everything runs in a single process).
 If C<sequential-extraction> is not set to true, this will
 also apply to extraction.
 
-Pass -1, and the value will be set automatically to 5
+Pass C<-1>, and the value will be set automatically to 5
 times the number of available cores, in case L<Sys::Info>
-is available. Be aware, that the report of available cores
+is available and can read CPU count (see C<--job-count>).
+Be aware, that the report of available cores
 may not work in certain conditions. Benchmarking the processing
 speed based on the number of jobs may be valuable.
+
 This is I<experimental>.
+
+
+=item B<--job-count|-jc>
+
+Print job and core information that would be used if
+C<-1> was passed to C<--jobs>.
 
 
 =item B<--koral|-k>
