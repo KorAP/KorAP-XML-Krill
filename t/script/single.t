@@ -25,7 +25,6 @@ ok(-d $input, 'Input directory found');
 my $output = tmpnam();
 my $cache = tmpnam();
 
-
 ok(!-f $output, 'Output does not exist');
 
 my $call = join(
@@ -34,6 +33,7 @@ my $call = join(
   '--input' => $input,
   '--output' => $output,
   '--cache' => $cache,
+  '--no-cache-delete',
   '-k' => 0.03,
   '-t' => 'OpenNLP#Tokens',
   '-l' => 'INFO'
@@ -48,6 +48,7 @@ stderr_like(
   $call
 );
 
+ok(-f $cache, 'Cache does exist');
 ok(-f $output, 'Output does exist');
 ok((my $file = Mojo::File->new($output)->slurp), 'Slurp data');
 ok((my $json = decode_json $file), 'decode json');
@@ -61,6 +62,7 @@ is($json->{data}->{tokenSource}, 'opennlp#tokens', 'TokenSource');
 
 # Delete output
 unlink $output;
+unlink $cache;
 ok(!-f $output, 'Output does not exist');
 
 $call .= ' -z';

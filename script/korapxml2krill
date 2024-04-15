@@ -176,7 +176,7 @@ use Fcntl qw(:flock SEEK_END);
 #
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2024/03/20';
+our $LAST_CHANGE = '2024/04/15';
 our $LOCAL = $FindBin::Bin;
 our $KORAL_VERSION = 0.03;
 our $VERSION_MSG = <<"VERSION";
@@ -211,7 +211,7 @@ GetOptions(
   'temporary-extract|te=s' => \($cfg{temporary_extract}),
   'skip|s=s'    => \@skip,
   'sigle|sg=s'  => \@sigle,
-  'cache|c=s'   => \($cfg{cache_file}),
+  'cache|c=s'   => \($cfg{cache}),
   'config|cfg=s' => \(my $cfg_file),
   'lang=s'        => \($cfg{lang}),
   'log|l=s'     => \($cfg{log}),
@@ -269,7 +269,7 @@ if ($cfg_file && -e $cfg_file) {
               meta base-sentences base-paragraphs base-pagebreaks
               gzip to-tar log lang cache non-word-tokens
               non-verbal-tokens sequential-extraction
-              temporary-extract cache-init
+              temporary-extract cache-init cache-delete
               koral extract-dir jobs quiet!) {
     my $underlined = $_ =~ tr/-/_/r;
     if (!defined($cfg{$underlined}) && defined $config{$_}) {
@@ -568,7 +568,8 @@ else {
 my $cache = Cache::FastMmap->new(
   share_file => $cache_file,
   cache_size => ($cfg{cache_size} // '50m'),
-  init_file  => ($cfg{cache_init} // 1)
+  init_file  => ($cfg{cache_init} // 1),
+  unlink_on_exit => $cache_delete
 );
 
 # Create batch object
@@ -601,7 +602,6 @@ if ($jobs eq '-1') {
   $log->info("Run using $jobs jobs on $cores cores");
 };
 
-
 # Glob and prefix files
 if (@input > 0) {
 
@@ -621,7 +621,6 @@ if (@input > 0) {
 
   print 'Input is ' . join(', ', @input)."\n" unless $q;
 };
-
 
 # Process a single file
 unless ($cmd) {
@@ -648,10 +647,8 @@ unless ($cmd) {
   # Process file
   $batch_file->process($input, $output);
 
-  # Delete cache file
-  unlink($cache_file) if $cache_delete;
-
   stop_time;
+
   exit;
 };
 
@@ -982,9 +979,6 @@ elsif ($cmd eq 'archive') {
   };
 
   $pool->wait_all_children;
-
-  # Delete cache file
-  unlink($cache_file) if $cache_delete;
 
   # Close tar filehandle
   if ($to_tar && $tar_fh) {
@@ -1377,7 +1371,8 @@ of key-value pairs with whitespace separator
 
 Supported parameters are:
 C<overwrite>, C<gzip>, C<jobs>, C<input-base>,
-C<token>, C<log>, C<cache>, C<cache-size>, C<cache-delete>, C<meta>,
+C<token>, C<log>,
+C<cache>, C<cache-size>, C<cache-init>, C<cache-delete>, C<meta>,
 C<output>, C<koral>,
 C<temporary-extract>, C<sequential-extraction>,
 C<base-sentences>, C<base-paragraphs>,
