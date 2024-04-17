@@ -1289,8 +1289,8 @@ the unicode symbol 'Black Vertical Rectangle' aka \x25ae.
 
 =item B<--jobs|-j>
 
-Define the number of concurrent jobs in seperated forks
-for archive processing.
+Define the number of spawned forks for concurrent jobs
+of archive processing.
 Defaults to C<0> (everything runs in a single process).
 
 If C<sequential-extraction> is not set to true, this will
@@ -1298,7 +1298,9 @@ also apply to extraction.
 
 Pass -1, and the value will be set automatically to 5
 times the number of available cores, in case L<Sys::Info>
-is available.
+is available. Be aware, that the report of available cores
+may not work in certain conditions. Benchmarking the processing
+speed based on the number of jobs may be valuable.
 This is I<experimental>.
 
 
@@ -1703,7 +1705,7 @@ Copyright (C) 2015-2024, L<IDS Mannheim|https://www.ids-mannheim.de/>
 
 Author: L<Nils Diewald|https://www.nils-diewald.de/>
 
-Contributor: Eliza Margaretha
+Contributor: Eliza Margaretha, Marc Kupietz
 
 L<KorAP::XML::Krill> is developed as part of the L<KorAP|https://korap.ids-mannheim.de/>
 Corpus Analysis Platform at the
