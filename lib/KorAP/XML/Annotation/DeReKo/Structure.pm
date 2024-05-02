@@ -95,6 +95,8 @@ sub parse {
 
         # Add pagebreaks
         elsif ($name eq 'pb' && index($as_base, 'pagebreaks') >= 0) {
+
+          # This should probably just add a marker!
           if (my $nr = first { $_->{-name} eq 'n' } @$attrs) {
             if (($nr = $nr->{'#text'}) && looks_like_number($nr)) {
               $mt = $mtt->add_by_term('~:base/s:pb');
@@ -102,13 +104,46 @@ sub parse {
               $mt->set_stored_offsets(0);
             };
           };
-        };
-      };
+        }
+      }
+
 
       # Add attributes
       if ($attrs) {
 
-        my $pl = '<s>' . $tui .($span->get_milestone ? '' : '<i>' . $span->get_p_end);
+        my $pl;
+
+        # Use utterances
+        if ($name eq 'u') {
+
+          my $data;
+          foreach (@$attrs) {
+            $data = $_->{'#text'};
+
+            $data =~ s/</&lt;/g;
+            $data =~ s/>/&gt;/g;
+
+            $pl = '<i>0<i>' . $span->get_o_start . '<x>';
+
+            if ($_->{-name} eq 'who') {
+              $mt = $mtt->add_by_term('~:base/s:marker');
+              $mt->set_payload($pl . 'who:'.$data);
+            }
+
+            elsif ($_->{-name} eq 'start') {
+              $mt = $mtt->add_by_term('~:base/s:marker');
+              $mt->set_payload($pl . 'start:' . $data);
+            }
+
+            elsif ($_->{-name} eq 'end') {
+              $mt = $mtt->add_by_term('~:base/s:marker');
+              $mt->set_payload($pl . 'end:' . $data);
+            }
+            $mt->set_stored_offsets(0);
+          };
+        };
+
+        $pl = '<s>' . $tui .($span->get_milestone ? '' : '<i>' . $span->get_p_end);
 
         # Set a tui if attributes are set
         foreach (@$attrs) {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader type="document" pattern="text" status="new" version="1.1" TEIform="teiHeader">
+      <fileDesc>
+        <titleStmt>
+          <dokumentSigle>KTC/001</dokumentSigle>
+          <d.title>ohne Titel</d.title>
+        </titleStmt>
+        <publicationStmt>
+          <distributor/>
+          <pubAddress/>
+          <availability region="ids" Default="n" status="unknown">QAO-NC</availability>
+          <pubDate/>
+        </publicationStmt>
+        <sourceDesc>
+          <biblStruct>
+            <monogr>
+              <h.title type="main">ohne Titel</h.title>
+              <h.author>maiLab</h.author>
+              <imprint/>
+              <biblScope unit="transcript">https://www.youtube.com/watch?v=8fraZlsmCio</biblScope>
+            </monogr>
+          </biblStruct>
+        </sourceDesc>
+      </fileDesc>
+    </idsHeader>

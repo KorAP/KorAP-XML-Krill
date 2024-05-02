@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader type="text" pattern="text" status="new" version="1.1" TEIform="teiHeader">
+        <fileDesc>
+          <titleStmt>
+            <textSigle>KTC/001.000001</textSigle>
+            <t.title assemblage="external">Wie viele Geschlechter gibt es?</t.title>
+          </titleStmt>
+          <publicationStmt>
+            <distributor/>
+            <pubAddress/>
+            <availability region="ids" status="unknown">QAO-NC</availability>
+            <pubDate/>
+          </publicationStmt>
+          <sourceDesc>
+            <biblStruct>
+              <analytic>
+                <h.title type="main">ohne Titel</h.title>
+                <h.author>maiLab</h.author>
+                <imprint/>
+                <biblNote n="url" rend="Transkript">https://www.youtube.com/watch?v=8fraZlsmCio</biblNote>
+              </analytic>
+              <monogr>
+                <h.title type="main">KoKoKom Transkriptkorpus</h.title>
+                <h.title type="sub"/>
+                <h.title type="abbr">KoKoKom-KTC</h.title>
+                <imprint>
+                  <publisher>Youtube / ARD</publisher>
+                  <pubDate type="year">2022</pubDate>
+                  <pubDate type="month">11</pubDate>
+                  <pubDate type="day">27</pubDate>
+                </imprint>
+                <biblScope unit="transcript">https://www.youtube.com/watch?v=8fraZlsmCio</biblScope>
+              </monogr>
+            </biblStruct>
+            <reference type="complete" assemblage="regular">KTC/001.000001, Transkript, 27.11.2022. maiLab: in: KTC/001., - Youtube / ARD</reference>
+            <reference type="short" assemblage="regular">KTC/001.000001, Transkript, 27.11.2022</reference>
+          </sourceDesc>
+        </fileDesc>
+      </idsHeader>

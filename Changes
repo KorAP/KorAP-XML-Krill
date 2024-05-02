@@ -1,17 +1,18 @@
-0.54 2023-04-15
+0.54 2024-05-02
         - Fix 'cache' parameter. (reported by kupietz)
         - Fix cache deletion for certain scenarios.
         - Improve information on the number of jobs
           running in parallel.
+        - Add support for KoKoKom <u> attributes.
 
-0.53 2023-03-20
+0.53 2024-03-20
         - Added Spacy support. (kupietz)
         - Support 'pos' as an alternative to 'ctag'
           in Treetagger. (kupietz)
         - Change default certainty value in TreeTagger
           to 1.
 
-0.52 2023-01-23
+0.52 2024-01-23
         - Introduced 'quiet' flag.
 
 0.51 2023-12-23

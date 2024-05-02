@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader type="corpus" pattern="text" status="new" version="1.1" TEIform="teiHeader">
+    <fileDesc>
+      <titleStmt>
+        <korpusSigle>KTC</korpusSigle>
+        <c.title>KoKoKom Transkriptkorpus</c.title>
+        <editor>Projekt KoKoKom – Über Geschlecht und Gender streiten. Konflikt und Konsens als Herausforderung der Wissenschaftskommunikation</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Leibniz-Institut für Deutsche Sprache</p>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <h.title type="main">KoKoKom Transkriptkorpus</h.title>
+            <h.title type="sub"/>
+            <h.title type="abbr">KoKoKom-KTC</h.title>
+            <imprint>
+              <publisher>Youtube / ARD</publisher>
+              <pubPlace>San Bruno, California / Berlin</pubPlace>
+            </imprint>
+          </monogr>
+        </biblStruct>
+        <reference type="super" assemblage="regular">KTC, YouTube, San Bruno, California: YouTube / Arbeitsgemeinschaft der öffentlich-rechtlichen Rundfunkanstalten der Bundesrepublik Deutschland, Berlin: ARD</reference>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc/>
+  </idsHeader>
