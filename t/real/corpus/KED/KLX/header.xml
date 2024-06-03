@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader TEIform="teiHeader" pattern="text" type="document" version="1.1">
+         <fileDesc>
+            <titleStmt>
+               <dokumentSigle>KED/KLX</dokumentSigle>
+               <d.title>Korpus Einfaches Deutsch: Klexikon (Online)</d.title>
+            </titleStmt>
+            <publicationStmt>
+               <distributor> Institut für Deutsche Sprache </distributor>
+               <pubAddress> Postfach 10 16 21, D-68016 Mannheim </pubAddress>
+               <telephone> +49 (0)621 1581 0 </telephone>
+               <availability xmlns:xs="http://www.w3.org/2001/XMLSchema" region="world">CC-BY-SA 4</availability>
+               <pubDate type="year">2024</pubDate>
+            </publicationStmt>
+            <sourceDesc>
+               <biblStruct>
+                  <monogr>
+                     <h.title>Klexikon (Online)</h.title>
+                     <imprint>
+                        <pubPlace>klexikon.zum.de</pubPlace>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </sourceDesc>
+         </fileDesc>
+         <xenoData>
+           <meta name="rcpnt"
+                 project="KED"
+                 type="keyword"
+                 desc="recipient group">kinder</meta>
+           <meta name="rcpntLabel"
+                 project="KED"
+                 type="attachment"
+                 desc="recipient group capitalized">Kinder</meta>
+         </xenoData>
+      </idsHeader>

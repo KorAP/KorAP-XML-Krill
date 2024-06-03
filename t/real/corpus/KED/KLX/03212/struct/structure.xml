@@ -1,0 +1,3583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="span.rng"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<layer docid="KED_KLX.03212"
+       xmlns="http://ids-mannheim.de/ns/KorAP"
+       version="KorAP-0.4">
+  <spanList>
+    <span id="s0" from="0" to="1733" l="1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">text</f>
+      </fs>
+    </span>
+    <span id="s1" from="0" to="1733" l="2">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">body</f>
+      </fs>
+    </span>
+    <span id="s2" from="0" to="5" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">head</f>
+      </fs>
+    </span>
+    <span id="s3" from="0" to="5" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s4" from="0" to="5" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Flöhe</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s5" from="5" to="384" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s6" from="5" to="37" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s7" from="6" to="11" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s8" from="12" to="19" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gehören</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s9" from="20" to="22" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zu</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s10" from="23" to="26" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s11" from="27" to="35" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Insekt</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s12" from="36" to="37" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s13" from="37" to="90" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s14" from="38" to="40" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">in</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s15" from="41" to="53" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mitteleuropa</f>
+            <f name="pos">NE</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s16" from="54" to="58" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">geben</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s17" from="59" to="61" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">es</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s18" from="62" to="66" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">etwa</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s19" from="67" to="69" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">70</f>
+            <f name="pos">CARD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s20" from="70" to="82" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">verschieden</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s21" from="83" to="88" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Art</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s22" from="89" to="90" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s23" from="90" to="139" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s24" from="91" to="96" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s25" from="97" to="103" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">werden</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s26" from="104" to="107" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nur</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s27" from="108" to="112" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zwei</f>
+            <f name="pos">CARD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s28" from="113" to="116" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">bis</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s29" from="117" to="121" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">vier</f>
+            <f name="pos">CARD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s30" from="122" to="132" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Millimeter</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s31" from="133" to="137" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">groß</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s32" from="138" to="139" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s33" from="139" to="231" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s34" from="140" to="143" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s35" from="144" to="149" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">haben</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s36" from="150" to="155" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">kein</f>
+            <f name="pos">PIAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s37" from="156" to="162" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Flügel</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s38" from="163" to="164" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s39" from="165" to="170" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">dafür</f>
+            <f name="pos">PROAV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s40" from="171" to="177" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">können</f>
+            <f name="pos">VMFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s41" from="178" to="181" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s42" from="182" to="194" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">hervorragend</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s43" from="195" to="203" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">springen</f>
+            <f name="pos">VVINF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s44" from="204" to="205" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s45" from="206" to="209" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">bis</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s46" from="210" to="212" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zu</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s47" from="213" to="218" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ein</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s48" from="219" to="224" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Meter</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s49" from="225" to="229" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">weit</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s50" from="230" to="231" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s51" from="231" to="300" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s52" from="232" to="237" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s53" from="238" to="243" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">haben</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s54" from="244" to="249" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ein</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s55" from="250" to="256" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Panzer</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s56" from="257" to="260" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">aus</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s57" from="261" to="266" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ein</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s58" from="267" to="276" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ähnlich</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s59" from="277" to="285" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Material</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s60" from="286" to="289" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">wie</f>
+            <f name="pos">KOKOM</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s61" from="290" to="298" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Muschel</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s62" from="299" to="300" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s63" from="300" to="343" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s64" from="301" to="304" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">man</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s65" from="305" to="309" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">können</f>
+            <f name="pos">VMFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s66" from="310" to="313" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s67" from="314" to="321" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">deshalb</f>
+            <f name="pos">PROAV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s68" from="322" to="330" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">schlecht</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s69" from="331" to="341" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zerdrücken</f>
+            <f name="pos">VVINF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s70" from="342" to="343" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s71" from="343" to="384" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s72" from="344" to="349" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s73" from="350" to="354" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s74" from="355" to="358" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">eng</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s75" from="359" to="362" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">mit</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s76" from="363" to="366" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s77" from="367" to="373" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Laus</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s78" from="374" to="382" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">verwanden</f>
+            <f name="pos">VVPP</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s79" from="383" to="384" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s80" from="384" to="755" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s81" from="384" to="432" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s82" from="385" to="390" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s83" from="391" to="396" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">leben</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s84" from="397" to="400" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">von</f>
+            <f name="pos">APPRART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s85" from="401" to="405" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Blut</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s86" from="406" to="409" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">von</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s87" from="410" to="416" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Tier</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s88" from="417" to="421" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">oder</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s89" from="422" to="430" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mensch</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s90" from="431" to="432" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s91" from="432" to="509" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s92" from="433" to="437" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">dazu</f>
+            <f name="pos">PROAV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s93" from="438" to="444" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">beißen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s94" from="445" to="448" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">und</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s95" from="449" to="456" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">stechen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s96" from="457" to="460" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s97" from="461" to="464" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">mit</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s98" from="465" to="470" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ihr</f>
+            <f name="pos">PPOSAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s99" from="471" to="477" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">hart</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s100" from="478" to="492" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mundwerkzeuge</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s101" from="493" to="498" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">durch</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s102" from="499" to="502" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s103" from="503" to="507" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Haut</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s104" from="508" to="509" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s105" from="509" to="544" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s106" from="510" to="516" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">solcher</f>
+            <f name="pos">PIAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s107" from="517" to="522" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Tier</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s108" from="523" to="528" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nennen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s109" from="529" to="532" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">man</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s110" from="533" to="542" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Parasite</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s111" from="543" to="544" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s112" from="544" to="609" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s113" from="545" to="548" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s114" from="549" to="559" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gebissen</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s115" from="560" to="568" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mensch</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s116" from="569" to="573" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">oder</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s117" from="574" to="577" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s118" from="578" to="587" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gebissen</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s119" from="588" to="592" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Tier</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s120" from="593" to="598" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nennen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s121" from="599" to="602" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">man</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s122" from="603" to="607" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Wirt</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s123" from="608" to="609" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s124" from="609" to="666" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s125" from="610" to="614" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">bei</f>
+            <f name="pos">APPRART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s126" from="615" to="619" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Wirt</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s127" from="620" to="628" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">entstehen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s128" from="629" to="634" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">durch</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s129" from="635" to="638" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s130" from="639" to="643" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Biss</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s131" from="644" to="647" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ein</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s132" from="648" to="655" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">stark</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s133" from="656" to="664" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Juckreiz</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s134" from="665" to="666" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s135" from="666" to="693" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s136" from="667" to="669" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">da</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s137" from="670" to="676" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">kratzen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s138" from="677" to="680" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">man</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s139" from="681" to="686" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gerne</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s140" from="687" to="691" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">dran</f>
+            <f name="pos">PTKVZ</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s141" from="692" to="693" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s142" from="693" to="755" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s143" from="694" to="697" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">PDS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s144" from="698" to="703" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nützen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s145" from="704" to="708" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">aber</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s146" from="709" to="715" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nichts</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s147" from="716" to="719" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">und</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s148" from="720" to="725" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">machen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s149" from="726" to="729" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s150" from="730" to="738" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Juckreiz</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s151" from="739" to="743" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">eher</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s152" from="744" to="753" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">schlimm</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s153" from="754" to="755" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s154" from="755" to="1111" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s155" from="755" to="815" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s156" from="756" to="758" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">es</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s157" from="759" to="763" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">geben</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s158" from="764" to="768" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zwei</f>
+            <f name="pos">CARD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s159" from="769" to="776" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Gruppe</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s160" from="777" to="780" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">von</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s161" from="781" to="787" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s162" from="788" to="789" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s163" from="790" to="799" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Pelzfloh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s164" from="800" to="803" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">und</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s165" from="804" to="813" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Nestfloh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s166" from="814" to="815" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s167" from="815" to="906" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s168" from="816" to="819" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s169" from="820" to="829" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Pelzfloh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s170" from="830" to="835" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">leben</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s171" from="836" to="838" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">in</f>
+            <f name="pos">APPRART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s172" from="839" to="843" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Pelz</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s173" from="844" to="849" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ihr</f>
+            <f name="pos">PPOSAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s174" from="850" to="855" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Wirt</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s175" from="856" to="857" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s176" from="858" to="872" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">beispielsweise</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s177" from="873" to="876" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">auf</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s178" from="877" to="883" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Ratte</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s179" from="884" to="885" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s180" from="886" to="892" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Katze</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s181" from="893" to="897" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">oder</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s182" from="898" to="904" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Hund</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s183" from="905" to="906" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s184" from="906" to="989" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s185" from="907" to="916" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Nestfloh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s186" from="917" to="925" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">hingegen</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s187" from="926" to="932" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">wohnen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s188" from="933" to="938" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gerne</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s189" from="939" to="941" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">in</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s190" from="942" to="949" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">unser</f>
+            <f name="pos">PPOSAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s191" from="950" to="959" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Teppich</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s192" from="960" to="961" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s193" from="962" to="975" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Polstermöbel</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s194" from="976" to="980" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">oder</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s195" from="981" to="987" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Bett</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s196" from="988" to="989" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s197" from="989" to="1058" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s198" from="990" to="993" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">von</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s199" from="994" to="998" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">dort</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s200" from="999" to="1009" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">bespringen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s201" from="1010" to="1013" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s202" from="1014" to="1017" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s203" from="1018" to="1026" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mensch</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s204" from="1027" to="1030" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nur</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s205" from="1031" to="1032" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s206" from="1033" to="1035" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">um</f>
+            <f name="pos">KOUI</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s207" from="1036" to="1041" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">PDS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s208" from="1042" to="1046" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Blut</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s209" from="1047" to="1049" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zu</f>
+            <f name="pos">PTKZU</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s210" from="1050" to="1056" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">saugen</f>
+            <f name="pos">VVINF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s211" from="1057" to="1058" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s212" from="1058" to="1111" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s213" from="1059" to="1063" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">dann</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s214" from="1064" to="1070" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ziehen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s215" from="1071" to="1074" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s216" from="1075" to="1079" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sich</f>
+            <f name="pos">PRF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s217" from="1080" to="1086" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">wieder</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s218" from="1087" to="1089" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">in</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s219" from="1090" to="1093" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ihr</f>
+            <f name="pos">PPOSAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s220" from="1094" to="1102" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Versteck</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s221" from="1103" to="1109" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zurück</f>
+            <f name="pos">PTKVZ</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s222" from="1110" to="1111" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s223" from="1111" to="1504" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s224" from="1111" to="1170" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s225" from="1112" to="1117" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s226" from="1118" to="1122" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s227" from="1123" to="1128" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nicht</f>
+            <f name="pos">PTKNEG</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s228" from="1129" to="1132" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">nur</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s229" from="1133" to="1142" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ärgerlich</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s230" from="1143" to="1144" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s231" from="1145" to="1152" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sondern</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s232" from="1153" to="1157" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">auch</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s233" from="1158" to="1168" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gefährlich</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s234" from="1169" to="1170" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s235" from="1170" to="1227" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s236" from="1171" to="1174" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sie</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s237" from="1175" to="1181" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">können</f>
+            <f name="pos">VMFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s238" from="1182" to="1187" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">durch</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s239" from="1188" to="1193" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ihr</f>
+            <f name="pos">PPOSAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s240" from="1194" to="1202" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Speichel</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s241" from="1203" to="1214" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Krankheit</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s242" from="1215" to="1225" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">übertragen</f>
+            <f name="pos">VVINF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s243" from="1226" to="1227" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s244" from="1227" to="1301" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s245" from="1228" to="1231" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s246" from="1232" to="1242" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">schlimm</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s247" from="1243" to="1248" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">davon</f>
+            <f name="pos">PROAV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s248" from="1249" to="1252" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s249" from="1253" to="1256" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s250" from="1257" to="1261" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Pest</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s251" from="1262" to="1263" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s252" from="1264" to="1267" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">PDS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s253" from="1268" to="1271" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">kommen</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s254" from="1272" to="1274" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">in</f>
+            <f name="pos">APPRART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s255" from="1275" to="1286" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mittelalter</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s256" from="1287" to="1292" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">immer</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s257" from="1293" to="1299" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">wieder</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s258" from="1300" to="1301" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s259" from="1301" to="1358" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s260" from="1302" to="1305" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">bei</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s261" from="1306" to="1309" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">uns</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s262" from="1310" to="1313" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s263" from="1314" to="1317" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s264" from="1318" to="1326" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Pestfloh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s265" from="1327" to="1333" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">jedoch</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s266" from="1334" to="1336" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">so</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s267" from="1337" to="1340" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gut</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s268" from="1341" to="1344" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">wie</f>
+            <f name="pos">KOKOM</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s269" from="1345" to="1356" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ausrotten</f>
+            <f name="pos">VVPP</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s270" from="1357" to="1358" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s271" from="1358" to="1441" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s272" from="1359" to="1364" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gegen</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s273" from="1365" to="1368" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s274" from="1369" to="1376" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">anderer</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s275" from="1377" to="1382" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s276" from="1383" to="1387" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">geben</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s277" from="1388" to="1390" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">es</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s278" from="1391" to="1396" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">heute</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s279" from="1397" to="1401" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">bei</f>
+            <f name="pos">APPRART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s280" from="1402" to="1406" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Arzt</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s281" from="1407" to="1411" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">oder</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s282" from="1412" to="1414" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">in</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s283" from="1415" to="1418" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s284" from="1419" to="1427" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Apotheke</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s285" from="1428" to="1432" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gut</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s286" from="1433" to="1439" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Mittel</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s287" from="1440" to="1441" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s288" from="1441" to="1504" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s289" from="1442" to="1444" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">am</f>
+            <f name="pos">PTKA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s290" from="1445" to="1451" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gut</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s291" from="1452" to="1455" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s292" from="1456" to="1458" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">es</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s293" from="1459" to="1465" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">jedoch</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s294" from="1466" to="1467" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s295" from="1468" to="1473" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">genau</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s296" from="1474" to="1477" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">auf</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s297" from="1478" to="1481" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s298" from="1482" to="1492" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Sauberkeit</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s299" from="1493" to="1495" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zu</f>
+            <f name="pos">PTKZU</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s300" from="1496" to="1502" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">achten</f>
+            <f name="pos">VVINF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s301" from="1503" to="1504" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s302" from="1504" to="1733" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s303" from="1504" to="1591" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s304" from="1505" to="1507" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">es</f>
+            <f name="pos">PPER</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s305" from="1508" to="1512" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">geben</f>
+            <f name="pos">VVFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s306" from="1513" to="1518" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sogar</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s307" from="1519" to="1531" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Flohzirkusse</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s308" from="1532" to="1533" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s309" from="1534" to="1537" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">PRELS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s310" from="1538" to="1547" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">natürlich</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s311" from="1548" to="1552" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">viel</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s312" from="1553" to="1560" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">klein</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s313" from="1561" to="1565" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s314" from="1566" to="1569" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">als</f>
+            <f name="pos">KOKOM</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s315" from="1570" to="1573" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ein</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s316" from="1574" to="1582" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">normal</f>
+            <f name="pos">ADJA</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s317" from="1583" to="1589" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Zirkus</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s318" from="1590" to="1591" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s319" from="1591" to="1644" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s320" from="1592" to="1595" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s321" from="1596" to="1604" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Artist</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s322" from="1605" to="1609" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s323" from="1610" to="1615" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">meist</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s324" from="1616" to="1628" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">ausgerechnet</f>
+            <f name="pos">ADV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s325" from="1629" to="1642" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Menschenfloh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s326" from="1643" to="1644" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s327" from="1644" to="1733" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s328" from="1645" to="1651" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">solcher</f>
+            <f name="pos">PIAT</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s329" from="1652" to="1657" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Floh</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s330" from="1658" to="1662" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sein</f>
+            <f name="pos">VAFIN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s331" from="1663" to="1669" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">groß</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s332" from="1670" to="1673" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">als</f>
+            <f name="pos">KOKOM</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s333" from="1674" to="1680" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">anderer</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s334" from="1681" to="1684" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">und</f>
+            <f name="pos">KON</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s335" from="1685" to="1690" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">daher</f>
+            <f name="pos">PROAV</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s336" from="1691" to="1697" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">gut</f>
+            <f name="pos">ADJD</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s337" from="1698" to="1700" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">zu</f>
+            <f name="pos">PTKZU</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s338" from="1701" to="1706" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">sehen</f>
+            <f name="pos">VVINF</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s339" from="1707" to="1708" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$,</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s340" from="1709" to="1712" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">vor</f>
+            <f name="pos">APPR</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s341" from="1713" to="1718" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">alle</f>
+            <f name="pos">PIS</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s342" from="1719" to="1722" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">der</f>
+            <f name="pos">ART</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s343" from="1723" to="1731" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">Weibchen</f>
+            <f name="pos">NN</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s344" from="1732" to="1733" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">w</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="lemma">--</f>
+            <f name="pos">$.</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+  </spanList>
+</layer>

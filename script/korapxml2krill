@@ -178,7 +178,7 @@ use Fcntl qw(:flock SEEK_END);
 # - Improve core count logging.
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2024/04/15';
+our $LAST_CHANGE = '2024/06/04';
 our $LOCAL = $FindBin::Bin;
 our $KORAL_VERSION = 0.03;
 our $VERSION_MSG = <<"VERSION";
@@ -1595,6 +1595,8 @@ developed in the KorAP project that are part of the KorAP preprocessing pipeline
 =item Gingko - Meta data from the Gingko project in addition to I5
 
 =item ICC - Meta data for the ICC in addition to I5
+
+=item NKJP - Meta data for the NKJP corpora
 
 =back
 

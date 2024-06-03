@@ -488,6 +488,8 @@ developed in the KorAP project that are part of the KorAP preprocessing pipeline
 
 =item ICC - Meta data for the ICC in addition to I5
 
+=item NKJP - Meta data for the NKJP corpora
+
 =back
 
 More importers are in preparation.

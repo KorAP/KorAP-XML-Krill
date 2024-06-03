@@ -110,8 +110,6 @@ like($token, qr!\~:base\/s:marker\$<i>0<i>0<x>who:Mai Thi Nguyen-Kim!, 'data');
 like($token, qr!\~:base\/s:marker\$<i>0<i>0<x>start:0:00!, 'data');
 like($token, qr!\~:base\/s:marker\$<i>0<i>0<x>end:01:20!, 'data');
 
-diag $tokens->to_json;
-
 done_testing;
 __END__
 

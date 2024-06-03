@@ -16,7 +16,7 @@ use Exporter 'import';
 
 our @EXPORT_OK = qw(get_file_name get_file_name_from_glob);
 
-our $VERSION = '0.54';
+our $VERSION = '0.55';
 
 has 'path';
 has [qw/text_sigle doc_sigle corpus_sigle/];
@@ -415,7 +415,7 @@ Accept the tokenization based on a given foundry and a given layer.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2015-2023, L<IDS Mannheim|https://www.ids-mannheim.de/>
+Copyright (C) 2015-2024, L<IDS Mannheim|https://www.ids-mannheim.de/>
 Author: L<Nils Diewald|https://www.nils-diewald.de/>
 
 KorAP::XML::Krill is developed as part of the

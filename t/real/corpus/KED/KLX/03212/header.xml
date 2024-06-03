@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader TEIform="teiHeader" pattern="text" status="new" type="text" version="1.0">
+            <fileDesc>
+               <titleStmt>
+                  <textSigle>KED/KLX.03212</textSigle>
+                  <t.title assemblage="external">KED/KLX.03212 Flöhe, In: Klexikon (Online) - URL:https://web.archive.org/web/20230309105908/https://klexikon.zum.de/wiki/Fl%C3%B6he, 2023</t.title>
+               </titleStmt>
+               <publicationStmt>
+                  <distributor/>
+                  <pubAddress/>
+                  <availability region="world">CC-BY-SA 4</availability>
+                  <pubDate type="year">2024</pubDate>
+               </publicationStmt>
+               <sourceDesc>
+                  <biblStruct>
+                     <analytic>
+                        <h.title type="main">Flöhe</h.title>
+                        <h.author/>
+                        <imprint>
+                           <pubPlace key="DE">
+                              <ref type="page_url"
+                                   subtype="archiv"
+                                   target="https://web.archive.org/web/20230309105908/https://klexikon.zum.de/wiki/Fl%C3%B6he"/>
+                           </pubPlace>
+                           <pubDate type="year">2023</pubDate>
+                           <pubDate type="month">03</pubDate>
+                           <pubDate type="day">09</pubDate>
+                        </imprint>
+                        <biblNote n="url" rend="link to source">https://web.archive.org/web/20230309105908/https://klexikon.zum.de/wiki/Fl%C3%B6he</biblNote>
+                        <biblNote n="url_type">archiv</biblNote>
+                        <biblNote n="KED_filename">KED_#05961_klexikon.xml</biblNote>
+                     </analytic>
+                     <monogr>
+                        <h.title type="main">Klexikon (Online)</h.title>
+                        <imprint>
+                           <publisher>klexikon.zum.de</publisher>
+                           <pubPlace key="DE">
+                              <ref target="klexikon.zum.de">klexikon.zum.de</ref>
+                           </pubPlace>
+                        </imprint>
+                     </monogr>
+                  </biblStruct>
+                  <reference type="complete" assemblage="external">KED/KLX.03212 Flöhe, In: Klexikon (Online) - URL:https://web.archive.org/web/20230309105908/https://klexikon.zum.de/wiki/Fl%C3%B6he, 2023</reference>
+                  <reference type="short" assemblage="external">KED/KLX.03212  (Online), 2023</reference>
+               </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+               <editorialDecl>
+                  <pagination type="no"/>
+                  <transduction n="1">KED-XML by Daniel Jach inkl. tokenisation, lemmatisation, pos-tags by Daniel Jach</transduction>
+                  <transduction n="2">XSL Conversion to I5 by IDS</transduction>
+               </editorialDecl>
+               <tagsDecl>
+                  <tagUsage gi="creatDate">contains the date of the download</tagUsage>
+                  <tagUsage gi="pubDate">contains the date of the download</tagUsage>
+               </tagsDecl>
+            </encodingDesc>
+            <profileDesc>
+               <textClass>
+                  <catRef n="0.999975"
+                          target="topic.wissenschaft.populaerwissenschaft"
+                          scheme="topic"/>
+                  <catRef n="2.02804e-05"
+                          target="topic.gesundheit-ernaehrung.gesundheit"
+                          scheme="topic"/>
+               </textClass>
+               <textDesc>
+                  <textType>Webtext:Lexikonartikel</textType>
+                  <textTypeRef>Webtext</textTypeRef>
+                  <textTypeArt>Lexikonartikel</textTypeArt>
+               </textDesc>
+               <creation>
+                  <creatDate>2023.03.09</creatDate>
+                  <creatRef>Download am 09. März 2023</creatRef>
+                  <creatRefShort>März 2023</creatRefShort>
+               </creation>
+               <textClass>
+                  <classCode scheme="KED.strategy">Erklären</classCode>
+                  <classCode scheme="KED.textType">Lexikonartikel</classCode>
+                  <classCode scheme="KED.topic">Gesundheit und Krankheit</classCode>
+                  <classCode scheme="KED.recipients">Kinder</classCode>
+               </textClass>
+            </profileDesc>
+            <xenoData>
+               <meta name="rcpnt"
+                     project="KED"
+                     type="keyword"
+                     desc="recipient group">kinder</meta>
+               <meta name="rcpntLabel"
+                     project="KED"
+                     type="attachment"
+                     desc="recipient group capitalized">Kinder</meta>
+               <meta name="strtgy" project="KED" type="keyword" desc="strategy">erklaeren</meta>
+               <meta name="strtgyLabel"
+                     project="KED"
+                     type="attachment"
+                     desc="strategy capitalized">Erklären</meta>
+               <meta name="topic" project="KED" type="keyword" desc="topic">gesundheit_krankheit</meta>
+               <meta name="topicLabel"
+                     project="KED"
+                     type="attachment"
+                     desc="topic capitalized">Gesundheit und Krankheit</meta>
+               <meta name="txttyp" project="KED" type="keyword" desc="text type">lexikonartikel</meta>
+               <meta name="txttypLabel"
+                     project="KED"
+                     type="attachment"
+                     desc="text type capitalized">Lexikonartikel</meta>
+               <meta name="cover1Herder"
+                     project="KED"
+                     type="string"
+                     desc="text coverage 1k">0.58</meta>
+               <meta name="cover2Herder"
+                     project="KED"
+                     type="string"
+                     desc="text coverage 2k">0.61</meta>
+               <meta name="cover3Herder"
+                     project="KED"
+                     type="string"
+                     desc="text coverage 3k">0.62</meta>
+               <meta name="cover4Herder"
+                     project="KED"
+                     type="string"
+                     desc="text coverage 4k">0.65</meta>
+               <meta name="cover5Herder"
+                     project="KED"
+                     type="string"
+                     desc="text coverage 5k">0.66</meta>
+               <meta name="nPara"
+                     project="KED"
+                     type="string"
+                     desc="humber of paragraphs">5</meta>
+               <meta name="nPunct1kTks"
+                     project="KED"
+                     type="attachment"
+                     desc="number of punctuational symbol per 1000 tokens">129.87</meta>
+               <meta name="nSent"
+                     project="KED"
+                     type="attachment"
+                     desc="number of sentences">28</meta>
+               <meta name="nToks"
+                     project="KED"
+                     type="attachment"
+                     desc="number of tokens">308</meta>
+               <meta name="nToksSentMd"
+                     project="KED"
+                     type="attachment"
+                     desc="median number of tokens per sentence">11.0</meta>
+               <meta name="nTyps"
+                     project="KED"
+                     type="attachment"
+                     desc="number of types">188</meta>
+
+               <!-- Added for testing -->
+               <meta name="strtgy" project="KED" type="keyword" desc="strategy">beschreiben</meta>
+               <meta name="cover5Herder"
+                     project="KED"
+                     type="string"
+                     desc="text coverage 5k">0.67</meta>
+            </xenoData>
+         </idsHeader>

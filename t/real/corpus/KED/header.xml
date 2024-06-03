@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader TEIform="teiHeader" pattern="Ztg/Zschr" status="new" type="corpus"
+             version="1.1">
+      <fileDesc>
+         <titleStmt>
+            <korpusSigle>KED</korpusSigle>
+            <c.title>KED - Korpus Einfaches Deutsch</c.title>
+            <editor>
+               <persName n="1">Daniel Jach, Shanghai Normal University, China</persName>
+            </editor>
+            <respStmt>
+               <persName n="1">Daniel Jach, Shanghai Normal University, China</persName>
+               <persName n="2">PD Dr. Gunther Dietz, University of Augsburg</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor> Institut für Deutsche Sprache </distributor>
+            <pubAddress> Postfach 10 16 21, D-68016 Mannheim </pubAddress>
+            <telephone> +49 (0)621 1581 0 </telephone>
+            <availability xmlns:xs="http://www.w3.org/2001/XMLSchema" region="world">CC-BY-SA 4</availability>
+            <pubDate>2021</pubDate>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <h.title type="main">KED - Korpus Einfaches Deutsch</h.title>
+                  <editor>Daniel Jach, Shanghai Normal University, China</editor>
+                  <imprint>
+                     <publisher>Daniel Jach, Shanghai Normal University</publisher>
+                     <pubDate type="year">2023</pubDate>
+                  </imprint>
+                  <biblNote n="url" rend="link to KED website">https://daniel-jach.github.io/simple-german/simple-german.html</biblNote>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <pagination type="no"/>
+            <transduction n="1">KED-XML by Daniel Jach inkl. tokenisation, lemmatisation, pos-tags by Daniel Jach</transduction>
+            <transduction n="2">XSL Conversion to I5 by IDS</transduction>
+         </editorialDecl>
+         <tagsDecl>
+            <tagUsage gi="creatDate">contains the date of the download</tagUsage>
+            <tagUsage gi="pubDate">contains the date of the download</tagUsage>
+         </tagsDecl>
+         <projectDesc>
+            <p>Project "Korpus Einfaches Deutsch (KED)"</p>
+            <p>Daniel Jach, Shanghai Normal University</p>
+            <p>PD Dr. Gunther Dietz, University of Augsburg</p>
+            <p>
+               <ref target="https://daniel-jach.github.io/simple-german/simple-german.html">https://daniel-jach.github.io/simple-german/simple-german.html</ref>
+            </p>
+         </projectDesc>
+         <classDecl>
+            <taxonomy id="topic">
+               <h.bibl>Thementaxonomie (siehe http://www.ids-mannheim.de/kl/projekte/methoden/te.html)</h.bibl>
+               <category id="topic.fiktion">
+                  <catDesc>Fiktion</catDesc>
+                  <category id="topic.fiktion.vermischtes">
+                     <catDesc>Fiktion:Vermischtes</catDesc>
+                  </category>
+               </category>
+               <category id="topic.freizeit-unterhaltung">
+                  <catDesc>Freizeit_Unterhaltung</catDesc>
+                  <category id="topic.freizeit-unterhaltung.reisen">
+                     <catDesc>Freizeit_Unterhaltung:Reisen</catDesc>
+                  </category>
+                  <category id="topic.freizeit-unterhaltung.rundfunk">
+                     <catDesc>Freizeit_Unterhaltung:Rundfunk</catDesc>
+                  </category>
+                  <category id="topic.freizeit-unterhaltung.vereine-veranstaltungen">
+                     <catDesc>Freizeit_Unterhaltung:Vereine_Veranstaltungen</catDesc>
+                  </category>
+               </category>
+               <category id="topic.gesundheit-ernaehrung">
+                  <catDesc>Gesundheit_Ernaehrung</catDesc>
+                  <category id="topic.gesundheit-ernaehrung.ernaehrung">
+                     <catDesc>Gesundheit_Ernaehrung:Ernaehrung</catDesc>
+                  </category>
+                  <category id="topic.gesundheit-ernaehrung.gesundheit">
+                     <catDesc>Gesundheit_Ernaehrung:Gesundheit</catDesc>
+                  </category>
+               </category>
+               <category id="topic.kultur">
+                  <catDesc>Kultur</catDesc>
+                  <category id="topic.kultur.bildende-kunst">
+                     <catDesc>Kultur:Bildende Kunst</catDesc>
+                  </category>
+                  <category id="topic.kultur.darstellende-kunst">
+                     <catDesc>Kultur:Darstellende Kunst</catDesc>
+                  </category>
+                  <category id="topic.kultur.film">
+                     <catDesc>Kultur:Film</catDesc>
+                  </category>
+                  <category id="topic.kultur.literatur">
+                     <catDesc>Kultur:Literatur</catDesc>
+                  </category>
+                  <category id="topic.kultur.mode">
+                     <catDesc>Kultur:Mode</catDesc>
+                  </category>
+                  <category id="topic.kultur.musik">
+                     <catDesc>Kultur:Musik</catDesc>
+                  </category>
+               </category>
+               <category id="topic.natur-umwelt">
+                  <catDesc>Natur_Umwelt</catDesc>
+                  <category id="topic.natur-umwelt.garten">
+                     <catDesc>Natur_Umwelt:Garten</catDesc>
+                  </category>
+                  <category id="topic.natur-umwelt.tiere">
+                     <catDesc>Natur_Umwelt:Tiere</catDesc>
+                  </category>
+                  <category id="topic.natur-umwelt.wetter-klima">
+                     <catDesc>Natur_Umwelt:Wetter_Klima</catDesc>
+                  </category>
+               </category>
+               <category id="topic.politik">
+                  <catDesc>Politik</catDesc>
+                  <category id="topic.politik.ausland">
+                     <catDesc>Politik:Ausland</catDesc>
+                  </category>
+                  <category id="topic.politik.inland">
+                     <catDesc>Politik:Inland</catDesc>
+                  </category>
+                  <category id="topic.politik.kommunalpolitik">
+                     <catDesc>Politik:Kommunalpolitik</catDesc>
+                  </category>
+               </category>
+               <category id="topic.rest">
+                  <catDesc>Rest</catDesc>
+                  <category id="topic.rest.boersenkurse">
+                     <catDesc>Rest:boersenkurse</catDesc>
+                  </category>
+                  <category id="topic.rest.geburt-tod-heirat">
+                     <catDesc>Rest:geburt_tod_heirat</catDesc>
+                  </category>
+                  <category id="topic.rest.impressum">
+                     <catDesc>Rest:impressum</catDesc>
+                  </category>
+                  <category id="topic.rest.inhaltsverzeichnisse">
+                     <catDesc>Rest:inhaltsverzeichnisse</catDesc>
+                  </category>
+                  <category id="topic.rest.ligatabellen">
+                     <catDesc>Rest:ligatabellen</catDesc>
+                  </category>
+                  <category id="topic.rest.tabellen">
+                     <catDesc>Rest:tabellen</catDesc>
+                  </category>
+                  <category id="topic.rest.veranstaltungshinweise">
+                     <catDesc>Rest:veranstaltungshinweise</catDesc>
+                  </category>
+               </category>
+               <category id="topic.sport">
+                  <catDesc>Sport</catDesc>
+                  <category id="topic.sport.ballsport">
+                     <catDesc>Sport:Ballsport</catDesc>
+                  </category>
+                  <category id="topic.sport.fussball">
+                     <catDesc>Sport:Fussball</catDesc>
+                  </category>
+                  <category id="topic.sport.motorsport">
+                     <catDesc>Sport:Motorsport</catDesc>
+                  </category>
+                  <category id="topic.sport.radsport">
+                     <catDesc>Sport:Radsport</catDesc>
+                  </category>
+                  <category id="topic.sport.tennis">
+                     <catDesc>Sport:Tennis</catDesc>
+                  </category>
+                  <category id="topic.sport.vermischtes">
+                     <catDesc>Sport:Vermischtes</catDesc>
+                  </category>
+                  <category id="topic.sport.wintersport">
+                     <catDesc>Sport:Wintersport</catDesc>
+                  </category>
+               </category>
+               <category id="topic.staat-gesellschaft">
+                  <catDesc>Staat_Gesellschaft</catDesc>
+                  <category id="topic.staat-gesellschaft.arbeit-und-beruf">
+                     <catDesc>Staat_Gesellschaft:Arbeit_und_Beruf</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.bildung">
+                     <catDesc>Staat_Gesellschaft:Bildung</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.biographien-interviews">
+                     <catDesc>Staat_Gesellschaft:Biographien_Interviews</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.drittes-reich-rechtsextremismus">
+                     <catDesc>Staat_Gesellschaft:Drittes_Reich_Rechtsextremismus</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.familie-geschlecht">
+                     <catDesc>Staat_Gesellschaft:Familie_Geschlecht</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.kirche">
+                     <catDesc>Staat_Gesellschaft:Kirche</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.recht">
+                     <catDesc>Staat_Gesellschaft:Recht</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.tod">
+                     <catDesc>Staat_Gesellschaft:Tod</catDesc>
+                  </category>
+                  <category id="topic.staat-gesellschaft.verbrechen">
+                     <catDesc>Staat_Gesellschaft:Verbrechen</catDesc>
+                  </category>
+               </category>
+               <category id="topic.technik-industrie">
+                  <catDesc>Technik_Industrie</catDesc>
+                  <category id="topic.technik-industrie.edv-elektronik">
+                     <catDesc>Technik_Industrie:EDV_Elektronik</catDesc>
+                  </category>
+                  <category id="topic.technik-industrie.kfz">
+                     <catDesc>Technik_Industrie:Kfz</catDesc>
+                  </category>
+                  <category id="topic.technik-industrie.transport-verkehr">
+                     <catDesc>Technik_Industrie:Transport_Verkehr</catDesc>
+                  </category>
+                  <category id="topic.technik-industrie.umweltschutz">
+                     <catDesc>Technik_Industrie:Umweltschutz</catDesc>
+                  </category>
+                  <category id="topic.technik-industrie.unfaelle">
+                     <catDesc>Technik_Industrie:Unfaelle</catDesc>
+                  </category>
+               </category>
+               <category id="topic.wirtschaft-finanzen">
+                  <catDesc>Wirtschaft_Finanzen</catDesc>
+                  <category id="topic.wirtschaft-finanzen.banken">
+                     <catDesc>Wirtschaft_Finanzen:Banken</catDesc>
+                  </category>
+                  <category id="topic.wirtschaft-finanzen.bilanzen">
+                     <catDesc>Wirtschaft_Finanzen:Bilanzen</catDesc>
+                  </category>
+                  <category id="topic.wirtschaft-finanzen.oeffentliche-finanzen">
+                     <catDesc>Wirtschaft_Finanzen:Oeffentliche_Finanzen</catDesc>
+                  </category>
+                  <category id="topic.wirtschaft-finanzen.sozialprodukt">
+                     <catDesc>Wirtschaft_Finanzen:Sozialprodukt</catDesc>
+                  </category>
+                  <category id="topic.wirtschaft-finanzen.waehrung">
+                     <catDesc>Wirtschaft_Finanzen:Waehrung</catDesc>
+                  </category>
+               </category>
+               <category id="topic.wissenschaft">
+                  <catDesc>Wissenschaft</catDesc>
+                  <category id="topic.wissenschaft.populaerwissenschaft">
+                     <catDesc>Wissenschaft:Populaerwissenschaft</catDesc>
+                  </category>
+               </category>
+               <category id="topic.unklassifizierbar">
+                  <catDesc>Text ist thematisch nicht klassifizierbar.</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language id="de" usage="100">Deutsch</language>
+         </langUsage>
+      </profileDesc>
+      <xenoData>
+        <meta name="rcpnt"
+              project="KED"
+              type="keyword"
+              desc="recipient group">kinder</meta>
+        <meta name="rcpntLabel"
+              project="KED"
+              type="attachment"
+              desc="recipient group capitalized">Kinder</meta>
+      </xenoData>
+    </idsHeader>

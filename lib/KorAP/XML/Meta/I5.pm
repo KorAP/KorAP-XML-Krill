@@ -262,6 +262,61 @@ sub parse {
 
   my $temp;
 
+
+  # Parse Xenodata
+  if ($temp = $dom->at('xenoData')) {
+    $temp->find('meta')->each(
+      sub {
+        my $name = $_->attr('name');
+        return unless $name;
+
+        my $value = _squish $_->all_text;
+        return unless $value;
+
+        my $xtype = $_->attr('type');
+        return unless $xtype;
+
+        my $key = '';
+        if ($xtype eq 'string') {
+          $key = 'S_';
+        } elsif ($xtype eq 'keyword') {
+          $key = 'K_';
+        } elsif ($xtype eq 'text') {
+          $key = 'T_';
+        } elsif ($xtype eq 'date') {
+          $key = 'D_';
+        } elsif ($xtype eq 'attachment') {
+          $key = 'A_';
+        } elsif ($xtype eq 'uri') {
+          $key = 'A_';
+          my $title = $_->att('desc');
+          $value = $self->korap_data_uri($value, title => ($title // $value));
+        } else {
+          $self->log->warn('Unknown xenodata type: ' . $xtype);
+          return;
+        };
+
+        if (my $project = $_->attr('project')) {
+          $key .= $project . '.';
+        };
+
+        # Prefix with type
+        if ($type eq 'doc' || $type eq 'corpus') {
+          $key .= $type . ucfirst($name);
+        } else {
+          $key .= $name;
+        };
+
+        if ($xtype eq 'keyword') {
+          $self->{$key} //= [];
+          push @{$self->{$key}}, $value;
+        } else {
+          $self->{$key} = $value;
+        };
+      }
+    );
+  };
+
   # Get PubPlace
   if ($temp = $dom->at('pubPlace')) {
     my $place_attr = $temp->attr('key');
