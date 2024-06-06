@@ -1595,15 +1595,25 @@ that are part of the KorAP preprocessing pipeline.
 
 =over 2
 
-=item B<I5> - Meta data for all I5 files
+=item B<I5>
 
-=item B<Sgbr> - Meta data from the Schreibgebrauch project
+Meta data for all I5 files
 
-=item B<Gingko> - Meta data from the Gingko project in addition to I5
+=item B<Sgbr>
 
-=item B<ICC> - Meta data for the ICC in addition to I5
+Meta data from the Schreibgebrauch project
 
-=item B<NKJP> - Meta data for the NKJP corpora
+=item B<Gingko>
+
+Meta data from the Gingko project in addition to I5
+
+=item B<ICC>
+
+Meta data for the ICC in addition to I5
+
+=item B<NKJP>
+
+Meta data for the NKJP corpora
 
 =back
 
@@ -1619,33 +1629,55 @@ that are directly translated to Krill objects. The supported values are:
 
 =over 2
 
-=item C<type>:
+=item C<type>
 
 =over 4
 
-=item C<string>: String meta data value
+=item C<string>
 
-=item C<keyword>: String meta data value, that can be given multiple times
+String meta data value
 
-=item C<text>: String meta data value, that is tokenized and can be searched as token sequences
+=item C<keyword>
 
-=item C<date>: Date meta data value (as "yyyy/mm/dd" with optional granularity)
+String meta data value, that can be given multiple times
 
-=item C<integer>: Numerical meta data value
+=item C<text>
 
-=item C<attachement>: Non-indexed meta data value (only retrievable)
+String meta data value, that is tokenized and can be searched as token sequences
 
-=item C<uri>: Non-indexed attached URI, takes the desc as the title for links
+=item C<date>
+
+Date meta data value (as "yyyy/mm/dd" with optional granularity)
+
+=item C<integer>
+
+Numerical meta data value
+
+=item C<attachement>
+
+Non-indexed meta data value (only retrievable)
+
+=item C<uri>
+
+Non-indexed attached URI, takes the desc as the title for links
 
 =back
 
-=item C<name>: The key of the meta object
+=item C<name>
 
-=item C<project> (optional): A prefixed namespace of the key
+The key of the meta object
 
-=item C<desc> (optional): A description of the key
+=item C<project> (optional)
 
-=item text content: The value of the meta object
+A prefixed namespace of the key
+
+=item C<desc> (optional)
+
+A description of the key
+
+=item text content
+
+The value of the meta object
 
 =back
 
