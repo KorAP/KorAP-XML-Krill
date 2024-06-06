@@ -66,7 +66,7 @@ ok(!$meta->{T_doc_sub_title}, 'Correct Doc sub title');
 ok(!$meta->{T_doc_author}, 'Correct Doc author');
 ok(!$meta->{A_doc_editor}, 'Correct doc editor');
 
-is($meta->{S_Jahr},'2003', 'XenoData');
+is($meta->{I_Jahr},'2003', 'XenoData');
 is($meta->{T_Person},'Johannes Rau', 'XenoData');
 is($meta->{T_GUID},'5d6a6c99-23b5-47eb-902f-f646ef7e24f5', 'XenoData');
 
