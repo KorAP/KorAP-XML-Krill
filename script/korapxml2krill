@@ -1665,7 +1665,9 @@ Non-indexed attached URI, takes the desc as the title for links
 
 =item C<name>
 
-The key of the meta object
+The key of the meta object, that may be prefixed by C<corpus> or C<doc>, in case the
+C<E<lt>xenoDataE<gt>> information is located on these levels. The text level introduces
+no prefixes.
 
 =item C<project> (optional)
 
