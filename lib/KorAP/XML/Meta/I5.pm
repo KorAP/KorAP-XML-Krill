@@ -576,7 +576,7 @@ useful, like I<title> or I<author>.
 Multiple string representations. Identical to string, but supports multiple
 values in the same field. Useful for multiple given values such as I<textClass>.
 
-=item B<Attachement>
+=item B<Attachment>
 
 Values that can't be used for the construction of virtual corpora, but are stored
 per document and can be retrieved. Useful for static data to be retrieved such as
@@ -600,10 +600,10 @@ The order may indicate a field to be overwritten.
 
 =item B<On all levels>
 
-  (analytic, monogr) editor[role=translator]   translator            ATTACHEMENT
+  (analytic, monogr) editor[role=translator]   translator            ATTACHMENT
   pubPlace@key                                 pubPlaceKey           STRING
   pubPlace                                     pubPlace              STRING
-  imprint publisher                            publisher             ATTACHEMENT
+  imprint publisher                            publisher             ATTACHMENT
   textDesc textType                            textType              STRING
   textDesc textDomain                          textDomain            STRING
   textDesc textTypeArt                         textTypeArt           STRING
@@ -614,10 +614,10 @@ The order may indicate a field to be overwritten.
   creatDate                                    creationDate          DATE
   textClass catRef@target                      textClass             KEYWORDS
   textClass h\.keywords > keyTerm              keywords              KEYWORDS
-  biblFull editionStmt                         biblEditionStatement  ATTACHEMENT
-  fileDesc editionStmt                         fileEditionStatement  ATTACHEMENT
+  biblFull editionStmt                         biblEditionStatement  ATTACHMENT
+  fileDesc editionStmt                         fileEditionStatement  ATTACHMENT
   fileDesc publicationStmt > availability      availability          STRING
-  fileDesc publicationStmt > distributor       distributor           ATTACHEMENT
+  fileDesc publicationStmt > distributor       distributor           ATTACHMENT
   profileDesc > langUsage > language[id]@id    language              STRING
 
 =item B<On text level>
@@ -627,14 +627,14 @@ The order may indicate a field to be overwritten.
   (analytic, monogr) h\.title[type=main]       title                 TEXT
   (analytic, monogr) h\.title[type=sub]        subTitle              TEXT
   (analytic, monogr) h\.author                 author                TEXT
-  (analytic, monogr) editor[role!=translator]  editor                ATTACHEMENT
-  sourceDesc reference[type=complete]          reference             ATTACHEMENT
+  (analytic, monogr) editor[role!=translator]  editor                ATTACHMENT
+  sourceDesc reference[type=complete]          reference             ATTACHMENT
   textDesc > column                            textColumn            STRING
-  biblStruct biblScope[type=pp]                srcPages              ATTACHEMENT
+  biblStruct biblScope[type=pp]                srcPages              ATTACHMENT
   biblNote[n=url]                              textExternalLink
-    & @rend                                                          ATTACHEMENT
+    & @rend                                                          ATTACHMENT
   biblNote[n="url.ids"]                        textInternalLink
-    & @rend                                                          ATTACHEMENT
+    & @rend                                                          ATTACHMENT
 
 =item B<On document level>
 
@@ -643,11 +643,11 @@ The order may indicate a field to be overwritten.
   (analytic, monogr) h\.title[type=main]       docTitle              TEXT
   (analytic, monogr) h\.title[type=sub]        docSubTitle           TEXT
   (analytic, monogr) h\.author                 docAuthor             TEXT
-  (analytic, monogr) editor[role!=translator]  docEditor             ATTACHEMENT
+  (analytic, monogr) editor[role!=translator]  docEditor             ATTACHMENT
   biblNote[n=url]                              docExternalLink
-    & @rend                                                          ATTACHEMENT
+    & @rend                                                          ATTACHMENT
   biblNote[n="url.ids"]                        docInternalLink
-    & @rend                                                          ATTACHEMENT
+    & @rend                                                          ATTACHMENT
 
 =item B<On corpus level>
 
@@ -656,11 +656,11 @@ The order may indicate a field to be overwritten.
   (analytic, monogr) h\.title[type=main]       corpusTitle           TEXT
   (analytic, monogr) h\.title[type=sub]        corpusSubTitle        TEXT
   (analytic, monogr) h\.author                 corpusAuthor          TEXT
-  (analytic, monogr) editor[role!=translator]  corpusEditor          ATTACHEMENT
+  (analytic, monogr) editor[role!=translator]  corpusEditor          ATTACHMENT
   biblNote[n=url]                              corpusExternalLink
-    & @rend                                                          ATTACHEMENT
+    & @rend                                                          ATTACHMENT
   biblNote[n="url.ids"]                        corpudInternalLink
-    & @rend                                                          ATTACHEMENT
+    & @rend                                                          ATTACHMENT
 
 =back
 

@@ -1201,7 +1201,7 @@ document, while C<archive> expects a KorAP-XML corpus folder or a zip
 file to batch process multiple files.
 C<extract> expects zip files only.
 
-C<archive> supports multiple input zip files with the constraint,
+C<archive> supports multiple input zip files with the constraint
 that the first archive listed contains all primary data files
 and all meta data files.
 
@@ -1214,7 +1214,7 @@ Input may also be defined using BSD glob wildcards.
 The extended input array will be sorted in length order, so the shortest
 path needs to contain all primary data files and all meta data files.
 
-(The directory structure follows the base directory format,
+(The directory structure follows the base directory format
 that may include a C<.> root folder.
 In this case further archives lacking a C<.> root folder
 need to be passed with a hash sign in front of the archive's name.
@@ -1639,11 +1639,11 @@ String meta data value
 
 =item C<keyword>
 
-String meta data value, that can be given multiple times
+String meta data value that can be given multiple times
 
 =item C<text>
 
-String meta data value, that is tokenized and can be searched as token sequences
+String meta data value that is tokenized and can be searched as token sequences
 
 =item C<date>
 
@@ -1653,7 +1653,7 @@ Date meta data value (as "yyyy/mm/dd" with optional granularity)
 
 Numerical meta data value
 
-=item C<attachement>
+=item C<attachment>
 
 Non-indexed meta data value (only retrievable)
 
@@ -1665,7 +1665,7 @@ Non-indexed attached URI, takes the desc as the title for links
 
 =item C<name>
 
-The key of the meta object, that may be prefixed by C<corpus> or C<doc>, in case the
+The key of the meta object that may be prefixed by C<corpus> or C<doc>, in case the
 C<E<lt>xenoDataE<gt>> information is located on these levels. The text level introduces
 no prefixes.
 
