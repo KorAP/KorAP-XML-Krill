@@ -1621,7 +1621,7 @@ New meta data importers can be defined in the C<KorAP::XML::Meta> namespace.
 See the built-in meta data importers as examples.
 
 The I5 metadata definition is based on TEI-P5 and supports C<E<lt>xenoDataE<gt>>
-with C<E<lt>meta<gt>> elements like
+with C<E<lt>metaE<gt>> elements like
 
   <meta type="..." name="..." project="..." desc="...">...</meta>
 
