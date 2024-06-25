@@ -118,7 +118,7 @@ sub parse {
 
           my $data;
           foreach (@$attrs) {
-            $data = $_->{'#text'};
+            $data = $_->{'#text'} or next;
 
             $data =~ s/</&lt;/g;
             $data =~ s/>/&gt;/g;
