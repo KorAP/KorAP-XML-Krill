@@ -38,6 +38,9 @@ is($meta->{S_pub_place}, 'Berlin', 'PubPlace');
 is($meta->{D_pub_date}, '19590219', 'PubDate');
 ok(!$meta->{A_publisher}, 'Publisher');
 
+is($meta->{K_award}->[0], 'Deutscher Buchpreis 2023', 'Award');
+is($meta->{K_award}->[1], 'Booker price 2024', 'Award');
+
 is($meta->{S_text_type}, 'Zeitung: Tageszeitung', 'Correct Text Type');
 
 ok(!$meta->{S_text_type_art}, 'Correct Text Type Art');

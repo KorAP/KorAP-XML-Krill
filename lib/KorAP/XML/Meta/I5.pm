@@ -501,6 +501,13 @@ sub parse {
       };
     };
 
+    $dom->find('biblStruct > note[type=award][subtype]')->each(
+      sub {
+        $self->{K_award} //= [];
+        push @{$self->{K_award}}, $_->attr('subtype');
+      }
+    );
+
     # DGD treatment
     if ($self->{T_title} && !$self->{A_externalLink} && $self->{_corpus_sigle} =~ /^(?:[AD]GD|FOLK)$/) {
       my $transcript = $self->{T_title};
@@ -631,6 +638,7 @@ The order may indicate a field to be overwritten.
   sourceDesc reference[type=complete]          reference             ATTACHMENT
   textDesc > column                            textColumn            STRING
   biblStruct biblScope[type=pp]                srcPages              ATTACHMENT
+  biblStruct > note[type=award][subtype]       award                 KEYWORD
   biblNote[n=url]                              textExternalLink
     & @rend                                                          ATTACHMENT
   biblNote[n="url.ids"]                        textInternalLink
