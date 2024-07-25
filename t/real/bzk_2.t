@@ -51,7 +51,6 @@ is($meta->{K_text_class}->[0], 'politik', 'Correct Text Class');
 is($meta->{K_text_class}->[1], 'ausland', 'Correct Text Class');
 ok(!$meta->{K_text_class}->[2], 'Correct Text Class');
 
-
 is($meta->{D_creation_date}, '19590219', 'Creation date');
 is($meta->{S_availability}, 'ACA-NC-LC', 'License');
 ok(!$meta->{pages}, 'Pages');
@@ -73,6 +72,9 @@ is($meta->{T_doc_title}, 'Neues Deutschland', 'Correct Doc title');
 is($meta->{T_doc_sub_title}, 'Organ des Zentralkomitees der Sozialistischen Einheitspartei Deutschlands', 'Correct Doc sub title');
 ok(!$meta->{T_doc_author}, 'Correct Doc author');
 ok(!$meta->{A_doc_editor}, 'Correct doc editor');
+
+is($meta->{A_URN},'data:application/x.korap-link;title=urn%3Anbn%3Ade%3A101%3A1-2019012904515398173807,http%3A%2F%2Fnbn-resolving.de%2Furn%3Anbn%3Ade%3A101%3A1-2019012904515398173807');
+is($meta->{S_ISBN},'978-3-7325-6705-8');
 
 # Tokenization
 use_ok('KorAP::XML::Tokenizer');

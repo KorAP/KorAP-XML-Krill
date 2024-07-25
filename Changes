@@ -1,5 +1,7 @@
 0.57 2024-07-25
         - Support award notes in i5.
+        - Add support for idno (with @rend) in i5.
+        - Add support for ISBN in i5.
 
 0.56 2024-06-05
         - Add support für corpusexplorer.

@@ -454,15 +454,41 @@ sub parse {
       $self->{A_file_edition_statement} = $temp2 if $temp2;
     };
 
-    if (my $availability = $temp->at('publicationStmt > availability')) {
-      $temp2 = _squish $availability->all_text;
-      $self->{S_availability} = $temp2 if $temp2;
-    };
+    if (my $pubstatement = $temp->at('publicationStmt')) {
 
-    if (my $distributor = $temp->at('publicationStmt > distributor')) {
-      $temp2 = _squish $distributor->all_text;
-      $self->{A_distributor} = $temp2 if $temp2;
-    }
+      if (my $availability = $pubstatement->at('> availability')) {
+        $temp2 = _squish $availability->all_text;
+        $self->{S_availability} = $temp2 if $temp2;
+      };
+
+      if (my $distributor = $pubstatement->at('> distributor')) {
+        $temp2 = _squish $distributor->all_text;
+        $self->{A_distributor} = $temp2 if $temp2;
+      };
+
+      $pubstatement->find('> idno')->each(
+        sub {
+          return unless $_->attr('type');
+          if ($_->attr('type') eq 'ISBN') {
+            $temp2 = _squish $_->all_text or return;
+            $self->{S_ISBN} = $temp2 if $temp2;
+          }
+
+          # When an idno has a rend, render value as a link
+          elsif (my $rend = $_->attr('rend')) {
+            $temp2 = _squish $_->all_text or return;
+            my ($key, $title) = split(';', $_->attr('rend'), 2);
+
+            if ($_->attr('type') eq 'URL' || $_->attr('type') eq 'URI') {
+              $self->{'A_' . $key} = $self->korap_data_uri($temp2, title => $title // $temp2);
+            }
+            else {
+              $self->{'A_' . $key} = $temp2;
+            }
+          }
+        }
+      );
+    };
   };
 
   if ($temp = $dom->at('profileDesc > langUsage > language[id]')) {
@@ -625,6 +651,8 @@ The order may indicate a field to be overwritten.
   fileDesc editionStmt                         fileEditionStatement  ATTACHMENT
   fileDesc publicationStmt > availability      availability          STRING
   fileDesc publicationStmt > distributor       distributor           ATTACHMENT
+  fileDesc publicationStmt > idno[type=ISBN]   isbn                  STRING
+  fileDesc publicationStmt > idno              @rend[0]              ATTACHMENT
   profileDesc > langUsage > language[id]@id    language              STRING
 
 =item B<On text level>

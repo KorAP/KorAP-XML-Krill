@@ -10,6 +10,11 @@
           <publicationStmt>
             <distributor/>
             <pubAddress/>
+            <idno type="URN">urn:nbn:de:101:1-2019012904515398173807</idno>
+            <idno type="URL" rend="URN;urn:nbn:de:101:1-2019012904515398173807">http://nbn-resolving.de/urn:nbn:de:101:1-2019012904515398173807</idno>
+            <idno type="ISBN">978-3-7325-6705-8</idno>
+            <idno type="URL">http://d-nb.info/1176524615/34</idno>
+            <idno type="IDN">1176524615</idno>
             <availability region="world">ACA-NC-LC</availability>
             <pubDate/>
           </publicationStmt>
