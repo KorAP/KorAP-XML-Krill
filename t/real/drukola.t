@@ -43,6 +43,7 @@ is($meta->{T_author}, 'Dragoș Bucurenci', 'Author');
 ok(!$meta->{A_publisher}, 'Publisher');
 ok(!$meta->{A_editor}, 'Editor');
 is($meta->{A_translator}, '[TRANSLATOR]', 'Translator');
+ok(!$meta->{T_translator}, 'Translator');
 #is($meta->{S_text_type}, 'Autobiographie', 'Correct Text Type');
 ok(!$meta->{S_text_type_art}, 'Correct Text Type Art');
 # is($meta->{S_text_type_ref}, '', 'Correct Text Type Ref');
@@ -147,6 +148,21 @@ is($meta->text_sigle, 'Corola-Journal/COLEGIUL NATIONAL „OCTAV BANCILA“ - IA
 is($meta->doc_sigle, 'Corola-Journal/COLEGIUL NATIONAL „OCTAV BANCILA“ - IASI', 'Doc Sigle');
 is($meta->corpus_sigle, 'Corola-Journal', 'Corpus Sigle');
 is($meta->{T_title}, 'APOGEUL ARHITECTURĂ ȘI DESIGN', 'Title');
+
+
+
+# Old translator behaviour:
+our %ENV;
+$ENV{K2K_TRANSLATOR_TEXT} = 1;
+$path = catdir(dirname(__FILE__), 'corpus','CoRoLa','BBU','BLOG','83709_a_82384');
+ok($doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
+ok($doc->parse, 'Parse document');
+
+is($doc->text_sigle, 'BBU/BLOG/83709_a_82384', 'Correct text sigle');
+$meta = $doc->meta;
+is($meta->{T_translator}, '[TRANSLATOR]', 'Translator');
+ok(!$meta->{A_translator}, 'Translator');
+
 
 done_testing;
 __END__

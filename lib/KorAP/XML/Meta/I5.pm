@@ -53,7 +53,6 @@ our $SIGLE_RE = qr/^([^_\/]+)(?:[_\/]([^\._\/]+?)(?:\.(.+?))?)?$/;
 #   "pubDate",
 #   "creationDate"
 
-
 sub _squish ($) {
   for ($_[0]) {
     s!\s\s+! !g;
@@ -140,7 +139,14 @@ sub parse {
     if ($editor && $editor->attr('role') && $editor->attr('role') eq 'translator') {
       # Translator is only supported on the text level currently
       $translator = _squish $editor->all_text;
-      $self->{A_translator} = $translator if $translator;
+      if ($translator) {
+        if (!!($ENV{K2K_TRANSLATOR_TEXT})) {
+          $self->{'T_translator'} = $translator;
+        } else {
+          $self->{'A_translator'} = $translator;
+          $self->log->warn('Indexing translator as an attachment is deprecated');
+        };
+      };
       $editor = undef;
     }
     else {
@@ -633,7 +639,7 @@ The order may indicate a field to be overwritten.
 
 =item B<On all levels>
 
-  (analytic, monogr) editor[role=translator]   translator            ATTACHMENT
+  (analytic, monogr) editor[role=translator]   translator            ATTACHMENT/TEXT
   pubPlace@key                                 pubPlaceKey           STRING
   pubPlace                                     pubPlace              STRING
   imprint publisher                            publisher             ATTACHMENT
