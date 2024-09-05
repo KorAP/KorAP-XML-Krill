@@ -61,7 +61,7 @@ WriteMakefile(
   EXE_FILES => ['script/korapxml2krill'],
   META_MERGE   => {
     'meta-spec' => { version => 2 },
-    requires  => { perl => '5.010001' },
+    requires  => { perl => '5.032' },
     resources => {
       license     => 'https://opensource.org/licenses/BSD-2-Clause',
       repository  => {
