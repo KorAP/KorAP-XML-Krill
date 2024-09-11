@@ -1,6 +1,7 @@
 package KorAP::XML::ForkPool;
 use strict;
 use warnings;
+use Mojo::File;
 use Parallel::ForkManager;
 use v5.10;
 
@@ -51,17 +52,17 @@ sub process_directory {
 
   print "Reading data ...\n";
 
-  my $it = Directory::Iterator->new($input);
   my @dirs;
-  my $dir;
 
-  while (1) {
-    if (!$it->is_directory && ($dir = $it->get) && $dir =~ s{/data\.xml$}{}) {
-      push @dirs, $dir;
-      $it->prune;
-    };
-    last unless $it->next;
-  };
+  Mojo::File->new($input[0])
+      ->list_tree({hidden => 0, dir => 0})
+      ->grep(qr/\/data\.xml$/)
+      ->each(
+        sub {
+          s/\/data\.xml$//;
+          push @dirs, $_;
+        }
+      );
 
   $self->{count} = scalar @dirs;
 

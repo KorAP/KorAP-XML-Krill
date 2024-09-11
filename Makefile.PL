@@ -27,8 +27,6 @@ WriteMakefile(
     'IO::Uncompress::Gunzip' => 2.102,
     'IO::Dir::Recursive' => 0.03,
     'File::Temp'      => 0.2311,
-    'Directory::Iterator' => 1,
-    'Directory::Iterator::XS' => 1,
     'Module::Install' => 1.19,
     'Dumbbench'       => 0.501,
     'Benchmark'       => 0,

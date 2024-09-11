@@ -13,7 +13,6 @@ use Log::Any qw($log);
 use Log::Any::Adapter;
 use Pod::Usage;
 use Cache::FastMmap;
-use Directory::Iterator;
 use KorAP::XML::Krill qw!get_file_name get_file_name_from_glob!;
 use KorAP::XML::Archive;
 use KorAP::XML::TarBuilder;
@@ -25,6 +24,7 @@ use File::Glob ':bsd_glob';
 use File::Temp qw/tempdir/;
 use File::Path qw(remove_tree make_path);
 use File::Basename;
+use Mojo::File;
 use Mojo::Collection 'c';
 use String::Random qw(random_string);
 use IO::File;
@@ -876,20 +876,18 @@ elsif ($cmd eq 'archive') {
 
   # Input is a directory
   if (-d $input[0]) {
-    # TODO:
-    #   Replace with Mojo::File
-    my $it = Directory::Iterator->new($input[0]);
-    my @dirs;
-    my $dir;
 
-    # Todo: Make a DO WHILE
-    while (1) {
-      if (!$it->is_directory && ($dir = $it->get) && $dir =~ s{/data\.xml$}{}) {
-        push @dirs, $dir;
-        $it->prune;
-      };
-      last unless $it->next;
-    };
+    my @dirs;
+
+    Mojo::File->new($input[0])
+        ->list_tree({hidden => 0, dir => 0})
+        ->grep(qr/\/data\.xml$/)
+        ->each(
+      sub {
+        s/\/data\.xml$//;
+        push @dirs, $_;
+      }
+    );
 
     print "Start processing ...\n" unless $q;
     $t = Benchmark->new;
@@ -1170,7 +1168,7 @@ Extracts KorAP-XML documents from a zip file.
 
   $ korapxml2krill serial -i <archive1> -i <archive2> -o <directory> -cfg <config-file>
 
-Convert archives sequentially. The inputs are not merged but treated
+Convert archives in serial. The inputs are not merged but treated
 as they are (so they may be premerged or globs).
 the C<--out> directory is treated as the base directory where subdirectories
 are created based on the archive name. In case the C<--to-tar> flag is given,
@@ -1480,7 +1478,6 @@ Print help information.
 Print version information.
 
 =back
-
 
 =head1 ANNOTATION SUPPORT
 
