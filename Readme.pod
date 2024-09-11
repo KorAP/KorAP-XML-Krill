@@ -369,6 +369,28 @@ Print version information.
 
 =back
 
+=head1 PERFORMANCE
+
+There are some ways to improve performance for large tasks:
+
+=item First unpack
+
+Using the archive or serial command on one or multiple zip files
+can be very slow, as it needs to unpack small portions every time.
+It's better to use C<--temporary-extract> to unpack the whole archive
+first into a temprary directory and then read the extracted files.
+This is especially important for remote archives
+
+=item Limit annotations
+
+Per default, all supported annotation layers are sought. This can be limited
+by adding C<--skip '#ALL'> and only listing the expected annotations with C<--anno>.
+
+=item Checking the parallel job count
+
+By providing the number of parallel jobs using C<--jobs>, the execution can be tailored to specific
+hardware environments.
+
 
 =head1 ANNOTATION SUPPORT
 

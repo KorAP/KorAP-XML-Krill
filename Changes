@@ -1,5 +1,6 @@
 0.58 2024-09-11
         - Remove Directory::Iterator and replace it with Mojo::File.
+        - Add performance hint.
 
 0.57 2024-07-26
         - Support award notes in i5.
