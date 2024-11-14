@@ -19,12 +19,12 @@ use KorAP::XML::TarBuilder;
 use KorAP::XML::Tokenizer;
 use KorAP::XML::Batch::File;
 use Config::Simple;
+use Path::Iterator::Rule;
 use Parallel::ForkManager;
 use File::Glob ':bsd_glob';
 use File::Temp qw/tempdir/;
 use File::Path qw(remove_tree make_path);
 use File::Basename;
-use Mojo::File;
 use Mojo::Collection 'c';
 use String::Random qw(random_string);
 use IO::File;
@@ -178,7 +178,7 @@ use Fcntl qw(:flock SEEK_END);
 # - Improve core count logging.
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2024/06/05';
+our $LAST_CHANGE = '2024/11/14';
 our $LOCAL = $FindBin::Bin;
 our $KORAL_VERSION = 0.03;
 our $VERSION_MSG = <<"VERSION";
@@ -879,15 +879,18 @@ elsif ($cmd eq 'archive') {
 
     my @dirs;
 
-    Mojo::File->new($input[0])
-        ->list_tree({hidden => 0, dir => 0})
-        ->grep(qr/\/data\.xml$/)
-        ->each(
-      sub {
-        s/\/data\.xml$//;
-        push @dirs, $_;
-      }
-    );
+    my $rule = Path::Iterator::Rule->new;
+    $rule->name('data.xml')->file;
+    my $next = $rule->iter(
+      $input[0] => {
+        sorted => 0,
+        depthfirst => -1,
+        error_handler => undef
+      });
+    while (defined(my $file = $next->())) {
+      $file =~ s/\/data\.xml$//;
+      push @dirs, $file;
+    };
 
     print "Start processing ...\n" unless $q;
     $t = Benchmark->new;

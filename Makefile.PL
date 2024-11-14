@@ -41,6 +41,7 @@ WriteMakefile(
     'Config::Simple'  => 4.58,
     'String::Random'  => 0.32,
     'File::Path'      => 2.18,
+    'Path::Iterator::Rule' => 1.015,
     'Archive::Tar'    => 2.40,
     'Archive::Tar::Stream' => 0.02,
     'Clone'           => 0.45,

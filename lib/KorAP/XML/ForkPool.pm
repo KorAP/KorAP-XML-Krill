@@ -1,7 +1,7 @@
 package KorAP::XML::ForkPool;
 use strict;
 use warnings;
-use Mojo::File;
+use Path::Iterator::Rule;
 use Parallel::ForkManager;
 use v5.10;
 
@@ -54,15 +54,19 @@ sub process_directory {
 
   my @dirs;
 
-  Mojo::File->new($input[0])
-      ->list_tree({hidden => 0, dir => 0})
-      ->grep(qr/\/data\.xml$/)
-      ->each(
-        sub {
-          s/\/data\.xml$//;
-          push @dirs, $_;
-        }
-      );
+  my $rule = Path::Iterator::Rule->new;
+  $rule->name('data.xml')->file;
+
+  my $next = $rule->iter(
+    $input => {
+      sorted => 0,
+      depthfirst => -1,
+      error_handler => undef
+    });
+  while (defined(my $file = $next->())) {
+    $file =~ s/\/data\.xml$//;
+    push @dirs, $file;
+  };
 
   $self->{count} = scalar @dirs;
 

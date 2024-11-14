@@ -16,7 +16,7 @@ use Exporter 'import';
 
 our @EXPORT_OK = qw(get_file_name get_file_name_from_glob);
 
-our $VERSION = '0.58';
+our $VERSION = '0.59';
 
 has 'path';
 has [qw/text_sigle doc_sigle corpus_sigle/];

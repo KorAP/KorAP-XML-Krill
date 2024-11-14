@@ -46,6 +46,7 @@ has log => sub {
 
 # Check if token is emoji
 sub is_emoji {
+  # return $_[0] =~ m{^\p{gc:S}\p{gc:M}*?(\x{200D}\p{gc:S}\p{gc:M}*?)*$}i;
   return $_[0] =~ m{^(\p{Extended_Pictographic}+\p{Emoji_Modifier}*)$}i;
 };
 

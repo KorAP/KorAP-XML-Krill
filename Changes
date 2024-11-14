@@ -1,3 +1,6 @@
+0.59 2024-11-14
+        - UsePath::Iterator::Rule instead of Mojo::File.
+
 0.58 2024-09-11
         - Remove Directory::Iterator and replace it with Mojo::File.
         - Add performance hint.
