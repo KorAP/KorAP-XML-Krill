@@ -1,6 +1,7 @@
 package KorAP::XML::Annotation::Base;
 use strict;
 use warnings;
+use feature ':5.10';
 
 # Importing method
 sub import {
