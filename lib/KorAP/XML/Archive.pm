@@ -6,6 +6,8 @@ use File::Spec::Functions qw(rel2abs);
 use strict;
 use warnings;
 
+our $RIPUNZIP_AVAILABLE;
+
 # Construct new archive helper
 sub new {
   my $class = shift;
@@ -22,10 +24,25 @@ sub new {
 };
 
 
-# Check if unzip is installed
-sub test_unzip {
+# Check if classic Info-ZIP unzip is installed
+sub test_InfoZIP_unzip {
   return 1 if grep { -x "$_/unzip"} split /:/, $ENV{PATH};
   return;
+};
+
+# Check if ripunzip is installed
+sub test_ripunzip {
+
+  if (!defined $RIPUNZIP_AVAILABLE) {
+    $RIPUNZIP_AVAILABLE = grep { -x "$_/ripunzip" } split /:/, $ENV{PATH};
+  }
+  return $RIPUNZIP_AVAILABLE;
+}
+
+# Check if unzip is installed (ripunzip can be used only for some tasks)
+sub test_unzip {
+  test_ripunzip();
+  return test_InfoZIP_unzip();
 };
 
 
@@ -144,11 +161,12 @@ sub extract_all {
   my $self = shift;
   my ($quiet, $target_dir, $jobs) = @_;
 
-  my @init_cmd = (
-    'unzip',          # Use unzip program
-    '-qo',            # quietly overwrite all existing files
-    '-uo',
-    '-d', $target_dir # Extract into target directory
+  my @init_cmd = (test_ripunzip() ?
+    # Use ripunzip program
+    ('ripunzip', 'unzip-file', '-q', '-d', $target_dir)
+    :
+    # Use InfoZIP unzip program
+    ('unzip', '-qo', '-uo', '-d', $target_dir)
   );
 
   # Iterate over all attached archives

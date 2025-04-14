@@ -391,6 +391,11 @@ by adding C<--skip '#ALL'> and only listing the expected annotations with C<--an
 By providing the number of parallel jobs using C<--jobs>, the execution can be tailored to specific
 hardware environments.
 
+=item Install ripunzip
+
+For full extraction of data, L<ripunzip|https://github.com/google/ripunzip> can be
+used for improved performance.
+
 
 =head1 ANNOTATION SUPPORT
 
