@@ -20,7 +20,6 @@ use File::Spec::Functions 'catdir';
 
 use_ok('KorAP::XML::Krill');
 
-# GOE/AGA/03828
 my $path = catdir(dirname(__FILE__), 'corpus','WDD','G27','38989');
 
 ok(my $doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
@@ -295,6 +294,42 @@ ok($tokens, 'Token Object is fine');
 
 ok(!$tokens->parse, 'Token parsing is fine');
 
+
+
+$path = catdir(dirname(__FILE__), 'corpus','WDD24','O0000','04238');
+
+ok($doc = KorAP::XML::Krill->new( path => $path . '/' ), 'Load Korap::Document');
+ok($doc->parse, 'Parse document');
+
+is($doc->text_sigle, 'WDD24/O0000/04238', 'Correct text sigle');
+is($doc->doc_sigle, 'WDD24/O0000', 'Correct document sigle');
+is($doc->corpus_sigle, 'WDD24', 'Correct corpus sigle');
+
+# Tokenization
+use_ok('KorAP::XML::Tokenizer');
+
+($token_base_foundry, $token_base_layer) = (qw/Base Tokens/);
+
+# Get tokenization
+$tokens = KorAP::XML::Tokenizer->new(
+  path => $doc->path,
+  doc => $doc,
+  foundry => $token_base_foundry,
+  layer => $token_base_layer,
+  name => 'tokens'
+);
+ok($tokens, 'Token Object is fine');
+ok($tokens->parse, 'Token parsing is fine');
+
+$tokens->add('OpenNLP', 'Morpho');
+
+$output = decode_json( $tokens->to_json );
+is($output->{data}->{foundries},
+   'opennlp opennlp/morpho',
+   'Foundries');
+is($output->{data}->{layerInfos}, 'opennlp/p=tokens', 'layerInfos');
+
+is($output->{data}->{stream}->[0]->[4], 'opennlp/p:ADV$<b>129<b>242', 'data');
 
 done_testing;
 __END__

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader type="text" pattern="text" version="1.0">
+            <fileDesc>
+               <titleStmt>
+                  <textSigle>WDD24/O0000.04238</textSigle>
+                  <t.title assemblage="external">WDD24/O0000.04238 Diskussion:Orthographie, In: Wikipedia - URL:http://de.wikipedia.org/wiki/Diskussion:Orthographie: Wikipedia, 2024</t.title>
+               </titleStmt>
+               <editionStmt version="0"/>
+               <publicationStmt>
+                  <distributor/>
+                  <pubAddress/>
+                  <availability region="world" status="free">CC-BY-SA</availability>
+                  <pubDate/>
+               </publicationStmt>
+               <sourceDesc Default="n">
+                  <biblStruct>
+                     <analytic>
+                        <h.title type="main">Diskussion:Orthographie</h.title>
+                        <h.author>Gebu,  u.a.</h.author>
+                        <imprint>
+                           <pubPlace>
+                              <ref type="page_url" target="http://de.wikipedia.org/wiki/Diskussion:Orthographie"/>
+                           </pubPlace>
+                        </imprint>
+                        <idno type="wikipedia-id">4238</idno>
+                     </analytic>
+                     <monogr>
+                        <h.title type="main">Wikipedia</h.title>
+                        <editor>Wikimedia Foundation</editor>
+                        <edition>
+                           <further>Dump file "dewiki-20240623-pages-meta-current.xml" retrieved from http://dumps.wikimedia.org</further>
+                           <kind/>
+                           <appearance/>
+                        </edition>
+                        <imprint>
+                           <publisher>Wikipedia</publisher>
+                           <pubPlace>
+                              <ref target="http://de.wikipedia.org"/>
+                           </pubPlace>
+                           <pubDate type="year">2024</pubDate>
+                           <pubDate type="month">06</pubDate>
+                           <pubDate type="day">23</pubDate>
+                        </imprint>
+                     </monogr>
+                     <relatedItem type="langlink">
+                        <ref targetLang="en" target="https://en.wikipedia.org/wiki/Orthography">Orthography</ref>
+                     </relatedItem>
+                     <relatedItem type="langlink">
+                        <ref targetLang="fr" target="https://fr.wikipedia.org/wiki/Orthographe">Orthographe</ref>
+                     </relatedItem>
+                  </biblStruct>
+                  <reference type="complete" assemblage="non-automatic">WDD24/O0000.04238 Diskussion:Orthographie, In: Wikipedia - URL:http://de.wikipedia.org/wiki/Diskussion:Orthographie: Wikipedia, 2024</reference>
+                  <reference type="short" assemblage="regular">WDD24/O0000.04238 Wikipedia; Diskussion:Orthographie, (Letzte Änderung 23.2.2022) 23.6.2024</reference>
+               </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+               <samplingDecl Default="n"/>
+               <editorialDecl Default="n">
+                  <pagination type="no"/>
+               </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+               <textClass>
+  <catRef n="1.000000" target="topic.kultur.literatur" scheme="topic"/>
+<classCode scheme="https://de.wikipedia.org/wiki/Kategorie:!Hauptkategorie">
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Schriftlinguistik">Kategorie:Schriftlinguistik</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Rechtschreibung">Kategorie:Rechtschreibung</ref>
+                  </classCode>
+                  <classCode scheme="https://en.wikipedia.org/wiki/Category:Contents">
+                     <ref target="https://en.wikipedia.org?title=Category%3AOrthography">Category:Orthography</ref>
+                  </classCode>
+               </textClass>
+               <creation>
+                  <creatDate>2022.02.23</creatDate>
+                  <creatRef>(Letzte Änderung 23.2.2022)</creatRef>
+                  <creatRefShort>(Letzte Änderung 23.2.2022)</creatRefShort>
+               </creation>
+               <textDesc>
+                  <textTypeArt>Diskussion</textTypeArt>
+                  <textDomain/>
+               </textDesc>
+            </profileDesc>
+         </idsHeader>
