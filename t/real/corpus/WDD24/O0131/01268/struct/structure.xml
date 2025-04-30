@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="span.rng"
+            type="application/xml"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<layer docid="WDD24_O0131.01268"
+       xmlns="http://ids-mannheim.de/ns/KorAP"
+       version="KorAP-0.4">
+  <spanList>
+    <span id="s0" from="0" to="1931" l="1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">text</f>
+      </fs>
+    </span>
+    <span id="s1" from="0" to="0" l="2">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">front</f>
+      </fs>
+    </span>
+    <span id="s2" from="0" to="1931" l="2">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">body</f>
+      </fs>
+    </span>
+    <span id="s3" from="0" to="1931" l="3">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">div</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="n">0</f>
+            <f name="type">section</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s4" from="0" to="1931" l="4">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">div</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="n">2</f>
+            <f name="type">thread</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s5" from="0" to="19" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">head</f>
+      </fs>
+    </span>
+    <span id="s6" from="19" to="325" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_1</f>
+            <f name="indentLevel">0</f>
+            <f name="who">WU00007648</f>
+            <f name="when-iso">2024-05-19T19:16+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s7" from="20" to="325" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s8" from="227" to="230" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://archive.ph/8ajem</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s9" from="288" to="325" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s10" from="288" to="298" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Sanandros</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s11" from="289" to="298" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s12" from="299" to="325" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s13" from="325" to="564" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_2</f>
+            <f name="indentLevel">0</f>
+            <f name="who">WU00255043</f>
+            <f name="when-iso">2024-05-19T20:41+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s14" from="325" to="564" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">list</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">dl</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s15" from="325" to="564" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">item</f>
+      </fs>
+    </span>
+    <span id="s16" from="326" to="326" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">gap</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="desc">template</f>
+            <f name="reason">omitted</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s17" from="521" to="564" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s18" from="521" to="537" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Visualnarrative</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s19" from="522" to="537" l="10">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s20" from="538" to="564" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s21" from="564" to="756" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_3</f>
+            <f name="indentLevel">2</f>
+            <f name="who">WU00255043</f>
+            <f name="when-iso">2024-05-19T21:31+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s22" from="565" to="756" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s23" from="639" to="710" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://scrcguides.libraries.wm.edu/repositories/2/digital_objects/2606</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s24" from="713" to="756" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s25" from="713" to="729" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Visualnarrative</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s26" from="714" to="729" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s27" from="730" to="756" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s28" from="756" to="1117" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_4</f>
+            <f name="indentLevel">3</f>
+            <f name="who">WU00007648</f>
+            <f name="when-iso">2024-05-20T06:41+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s29" from="757" to="1117" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s30" from="1080" to="1117" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s31" from="1080" to="1090" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Sanandros</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s32" from="1081" to="1090" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s33" from="1091" to="1117" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s34" from="1117" to="1124" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_5</f>
+            <f name="indentLevel">4</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s35" from="1118" to="1124" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s36" from="1124" to="1425" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_6</f>
+            <f name="indentLevel">4</f>
+            <f name="who">WU00190345</f>
+            <f name="when-iso">2024-05-22T07:19+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s37" from="1125" to="1425" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s38" from="1165" to="1189" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://archive.ph/8ajem</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s39" from="1383" to="1425" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s40" from="1383" to="1398" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Chickenbrother</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s41" from="1384" to="1398" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s42" from="1399" to="1425" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s43" from="1425" to="1541" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_7</f>
+            <f name="indentLevel">5</f>
+            <f name="who">WU00007648</f>
+            <f name="when-iso">2024-05-22T21:12+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s44" from="1426" to="1541" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s45" from="1504" to="1541" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s46" from="1504" to="1514" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Sanandros</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s47" from="1505" to="1514" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s48" from="1515" to="1541" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s49" from="1541" to="1554" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_8</f>
+            <f name="indentLevel">6</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s50" from="1542" to="1554" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s51" from="1554" to="1795" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_9</f>
+            <f name="indentLevel">6</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s52" from="1554" to="1795" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s53" from="1555" to="1795" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://wm.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991033273899303196&amp;amp;context=L&amp;amp;vid=01COWM_INST:01COWM_WM_NEWUI⟨=en&amp;amp;search_scope=WMCWF&amp;amp;adaptor=Local%20Search%20Engine&amp;amp;tab=Everything&amp;amp;query=any,contains,critchfield%20documents</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s54" from="1795" to="1931" l="5">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">posting</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="id">i.13101268_1_10</f>
+            <f name="indentLevel">6</f>
+            <f name="who">WU00190345</f>
+            <f name="when-iso">2024-05-23T06:00+02</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s55" from="1796" to="1931" l="6">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">p</f>
+      </fs>
+    </span>
+    <span id="s56" from="1889" to="1931" l="7">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">signed</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="type">signed</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s57" from="1889" to="1904" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">ref</f>
+        <f name="attr">
+          <fs type="attr">
+            <f name="target">https://de.wikipedia.org/wiki/Benutzer:Chickenbrother</f>
+          </fs>
+        </f>
+      </fs>
+    </span>
+    <span id="s58" from="1890" to="1904" l="9">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">name</f>
+      </fs>
+    </span>
+    <span id="s59" from="1905" to="1931" l="8">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">date</f>
+      </fs>
+    </span>
+    <span id="s60" from="1931" to="1931" l="2">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">back</f>
+      </fs>
+    </span>
+    <span id="s61" from="1" to="189" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s62" from="189" to="199" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s63" from="200" to="217" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s64" from="218" to="518" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s65" from="519" to="779" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s66" from="780" to="913" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s67" from="914" to="1078" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s68" from="1078" to="1368" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s69" from="1369" to="1502" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s70" from="1502" to="1886" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+    <span id="s71" from="1887" to="1931" l="-1">
+      <fs type="struct" xmlns="http://www.tei-c.org/ns/1.0">
+        <f name="name">s</f>
+      </fs>
+    </span>
+  </spanList>
+</layer>

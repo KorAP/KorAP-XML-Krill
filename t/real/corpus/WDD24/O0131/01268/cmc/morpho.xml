@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="span.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<layer docid="WDD24_O0131.01268" xmlns="http://ids-mannheim.de/ns/KorAP" version="KorAP-0.4">
+<spanList>
+  <span id="s120950_n26" from="639" to="710">
+   <fs type="lex" xmlns="http://www.tei-c.org/ns/1.0">
+    <f name="lex">
+     <fs>
+      <f name="pos">URL</f>
+      <f name="upos">URL</f>
+     </fs>
+    </f>
+   </fs>
+  </span>
+  <span id="s120950_n30" from="732" to="734">
+   <fs type="lex" xmlns="http://www.tei-c.org/ns/1.0">
+    <f name="lex">
+     <fs>
+      <f name="pos">EMOASC</f>
+      <f name="upos">EMOASC</f>
+     </fs>
+    </f>
+   </fs>
+  </span>
+  <span id="s120950_n20" from="1165" to="1190">
+   <fs type="lex" xmlns="http://www.tei-c.org/ns/1.0">
+    <f name="lex">
+     <fs>
+      <f name="pos">URL</f>
+      <f name="upos">URL</f>
+     </fs>
+    </f>
+   </fs>
+  </span>
+  <span id="s120950_n15" from="1555" to="1682">
+   <fs type="lex" xmlns="http://www.tei-c.org/ns/1.0">
+    <f name="lex">
+     <fs>
+      <f name="pos">URL</f>
+      <f name="upos">URL</f>
+     </fs>
+    </f>
+   </fs>
+  </span>
+ </spanList>
+</layer>

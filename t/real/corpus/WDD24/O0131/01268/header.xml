@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idsHeader type="text" pattern="text" version="1.0">
+            <fileDesc>
+               <titleStmt>
+                  <textSigle>WDD24/O0131.01268</textSigle>
+                  <t.title assemblage="external">WDD24/O0131.01268 Diskussion:Operation Campus, In: Wikipedia - URL:http://de.wikipedia.org/wiki/Diskussion:Operation_Campus: Wikipedia, 2024</t.title>
+               </titleStmt>
+               <editionStmt version="0"/>
+               <publicationStmt>
+                  <distributor/>
+                  <pubAddress/>
+                  <availability region="world" status="free">CC-BY-SA</availability>
+                  <pubDate/>
+               </publicationStmt>
+               <sourceDesc Default="n">
+                  <biblStruct>
+                     <analytic>
+                        <h.title type="main">Diskussion:Operation Campus</h.title>
+                        <h.author>Chickenbrother,  u.a.</h.author>
+                        <imprint>
+                           <pubPlace>
+                              <ref type="page_url" target="http://de.wikipedia.org/wiki/Diskussion:Operation_Campus"/>
+                           </pubPlace>
+                        </imprint>
+                        <idno type="wikipedia-id">13101268</idno>
+                     </analytic>
+                     <monogr>
+                        <h.title type="main">Wikipedia</h.title>
+                        <editor>Wikimedia Foundation</editor>
+                        <edition>
+                           <further>Dump file "dewiki-20240623-pages-meta-current.xml" retrieved from http://dumps.wikimedia.org</further>
+                           <kind/>
+                           <appearance/>
+                        </edition>
+                        <imprint>
+                           <publisher>Wikipedia</publisher>
+                           <pubPlace>
+                              <ref target="http://de.wikipedia.org"/>
+                           </pubPlace>
+                           <pubDate type="year">2024</pubDate>
+                           <pubDate type="month">06</pubDate>
+                           <pubDate type="day">23</pubDate>
+                        </imprint>
+                     </monogr>
+                  </biblStruct>
+                  <reference type="complete" assemblage="non-automatic">WDD24/O0131.01268 Diskussion:Operation Campus, In: Wikipedia - URL:http://de.wikipedia.org/wiki/Diskussion:Operation_Campus: Wikipedia, 2024</reference>
+                  <reference type="short" assemblage="regular">WDD24/O0131.01268 Wikipedia; Diskussion:Operation Campus, (Letzte Änderung 23.5.2024) 23.6.2024</reference>
+               </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+               <samplingDecl Default="n"/>
+               <editorialDecl Default="n">
+                  <pagination type="no"/>
+               </editorialDecl>
+            </encodingDesc>
+            <profileDesc>
+               <textClass>
+  <catRef n="0.892010" target="topic.kultur.musik" scheme="topic"/>
+  <catRef n="0.107982" target="topic.freizeit-unterhaltung.reisen" scheme="topic"/>
+<classCode scheme="https://de.wikipedia.org/wiki/Kategorie:!Hauptkategorie">
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Beziehungen_zwischen_Deutschland_und_den_Vereinigten_Staaten">Kategorie:Beziehungen zwischen Deutschland und den Vereinigten Staaten</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Deutschland_im_Kalten_Krieg">Kategorie:Deutschland im Kalten Krieg</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Deckname">Kategorie:Deckname</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Bundeskanzleramt_(Deutschland)">Kategorie:Bundeskanzleramt (Deutschland)</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Bundesnachrichtendienst">Kategorie:Bundesnachrichtendienst</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Organisation_Gehlen">Kategorie:Organisation Gehlen</ref>
+                     <ref target="https://de.wikipedia.org?title=Kategorie:Nachrichtendienstliche_Operationen">Kategorie:Nachrichtendienstliche Operationen</ref>
+                  </classCode>
+                  <classCode scheme="https://en.wikipedia.org/wiki/Category:Contents">
+                     <ref target="https://en.wikipedia.org?title=Category%3AGermany%E2%80%93United_States_relations">Category:Germany–United States relations</ref>
+                     <ref target="https://en.wikipedia.org?title=Category%3ACold_War_history_of_Germany">Category:Cold War history of Germany</ref>
+                     <ref target="https://en.wikipedia.org?title=Category%3ACode_names">Category:Code names</ref>
+                     <ref target="https://en.wikipedia.org?title=Category%3AFederal_Intelligence_Service">Category:Federal Intelligence Service</ref>
+                     <ref target="https://en.wikipedia.org?title=Category%3AIntelligence_operations">Category:Intelligence operations</ref>
+                  </classCode>
+               </textClass>
+               <creation>
+                  <creatDate>2024.05.23</creatDate>
+                  <creatRef>(Letzte Änderung 23.5.2024)</creatRef>
+                  <creatRefShort>(Letzte Änderung 23.5.2024)</creatRefShort>
+               </creation>
+               <textDesc>
+                  <textTypeArt>Diskussion</textTypeArt>
+                  <textDomain/>
+               </textDesc>
+            </profileDesc>
+         </idsHeader>
