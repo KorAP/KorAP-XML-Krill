@@ -27,6 +27,18 @@ is(scalar @list, 10, 'Found all tests');
 is($list[0], './TEST/BSP/1', 'First document');
 is($list[-1], './TEST/BSP/10', 'First document');
 
+# Test list_texts_iterator
+my $iter = $archive->list_texts_iterator;
+ok($iter, 'Iterator created');
+my @iter_list;
+while (defined(my $path = $iter->())) {
+  push @iter_list, $path;
+}
+is_deeply(\@iter_list, \@list, 'Iterator returns same paths as list_texts');
+
+# Test count_texts
+is($archive->count_texts, 10, 'count_texts returns correct number');
+
 my @path = $archive->split_path('./TEST/BSP/9');
 is($path[0],'.', 'Prefix');
 is($path[1],'TEST', 'Prefix');

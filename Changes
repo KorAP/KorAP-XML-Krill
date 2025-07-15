@@ -1,5 +1,6 @@
 0.62 2025-07-15
         - Remove lock from tar builder.
+        - Don't create a list of files (that is passed to forks).
 
 0.61 2025-04-30
         - Support certainty in OpenNLP/Morpho.

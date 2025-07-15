@@ -884,8 +884,24 @@ elsif ($cmd eq 'archive') {
   # Input is a directory
   if (-d $input[0]) {
 
-    my @dirs;
+    # First pass: count files
+    my $rule_count = Path::Iterator::Rule->new;
+    $rule_count->name('data.xml')->file;
+    my $count_iter = $rule_count->iter(
+      $input[0] => {
+        sorted => 0,
+        depthfirst => -1,
+        error_handler => undef
+      });
+    $count = 0;
+    while (defined(my $file = $count_iter->())) {
+      $count++;
+    };
 
+    print "Start processing ...\n" unless $q;
+    $t = Benchmark->new;
+
+    # Second pass: process files using iterator
     my $rule = Path::Iterator::Rule->new;
     $rule->name('data.xml')->file;
     my $next = $rule->iter(
@@ -894,27 +910,21 @@ elsif ($cmd eq 'archive') {
         depthfirst => -1,
         error_handler => undef
       });
-    while (defined(my $file = $next->())) {
-      $file =~ s/\/data\.xml$//;
-      push @dirs, $file;
-    };
-
-    print "Start processing ...\n" unless $q;
-    $t = Benchmark->new;
-    $count = scalar @dirs;
 
   DIRECTORY_LOOP:
-    for (my $i = 0; $i < $count; $i++) {
+    while (defined(my $file = $next->())) {
+      # Remove data.xml suffix to get directory path
+      $file =~ s/\/data\.xml$//;
 
       my $filename = catfile(
         $output_dir,
-        get_file_name($input[0], $dirs[$i]) . '.json' . ($gzip ? '.gz' : '')
+        get_file_name($input[0], $file) . '.json' . ($gzip ? '.gz' : '')
       );
 
       # Get the next fork
       $pool->start and next DIRECTORY_LOOP;
 
-      if (my $return = $batch_file->process($dirs[$i] => $filename)) {
+      if (my $return = $batch_file->process($file => $filename)) {
         $pool->finish(
           0,
           [
@@ -925,7 +935,7 @@ elsif ($cmd eq 'archive') {
         );
       }
       else {
-        $pool->finish(1, ["Unable to process " . $dirs[$i]]);
+        $pool->finish(1, ["Unable to process " . $file]);
       };
     };
   }
@@ -946,14 +956,18 @@ elsif ($cmd eq 'archive') {
 
     print "Start processing ...\n" unless $q;
     $t = Benchmark->new;
-    my @dirs = $archive->list_texts;
-    $count = scalar @dirs;
-
-  ARCHIVE_LOOP:
-    for (my $i = 0; $i < $count; $i++) {
-
+    
+    # Get count of texts
+    $count = $archive->count_texts;
+    
+    # Get iterator for text paths
+    my $text_iter = $archive->list_texts_iterator;
+    
+    # Process texts one at a time using the iterator
+    ARCHIVE_LOOP:
+    while (defined(my $text_path = $text_iter->())) {
       # Split path information
-      my ($prefix, $corpus, $doc, $text) = $archive->split_path($dirs[$i]);
+      my ($prefix, $corpus, $doc, $text) = $archive->split_path($text_path);
 
       my $filename = catfile(
         $output_dir,
@@ -1003,7 +1017,7 @@ elsif ($cmd eq 'archive') {
 
       # Unable to extract
       else {
-        $pool->finish(1, ["Unable to extract " . $dirs[$i], $temp]);
+        $pool->finish(1, ["Unable to extract " . $text_path, $temp]);
       };
     };
   }

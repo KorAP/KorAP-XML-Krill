@@ -40,3 +40,5 @@ t/real/corpus/DCK
 t/real/corpus/AGD-orig
 t/real/corpus/FOLK-orig
 t/real/dck.t
+t/real/corpus/TWI21
+t/real/corpus/WPD15

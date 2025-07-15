@@ -47,6 +47,18 @@ ok($archive->attach(catfile(@path, $name . '.tree_tagger.zip')), 'Add tree tagge
 is(scalar @list, 1, 'Found all tests');
 is($list[0], 'WPD15/A00/00081', 'First document');
 
+# Test list_texts_iterator
+my $iter = $archive->list_texts_iterator;
+ok($iter, 'Iterator created');
+my @iter_list;
+while (defined(my $path = $iter->())) {
+  push @iter_list, $path;
+}
+is_deeply(\@iter_list, \@list, 'Iterator returns same paths as list_texts');
+
+# Test count_texts
+is($archive->count_texts, 1, 'count_texts returns correct number');
+
 ok($archive->test, 'Test all archives');
 
 # Split path

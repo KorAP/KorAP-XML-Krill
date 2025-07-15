@@ -78,6 +78,42 @@ sub list_texts {
   return @texts;
 };
 
+# Create an iterator for text paths
+sub list_texts_iterator {
+  my $self = shift;
+  my $file = $self->[0]->[0];
+  
+  # Open pipe to unzip command
+  open(my $unzip, "unzip -l -UU -qq $file \"*/data.xml\" |") 
+    or die "Failed to run unzip: $!";
+  
+  return sub {
+    while (my $line = <$unzip>) {
+      if ($line =~ m![\t\s]
+            ((?:\./)?
+              [^\s\t/\.]+?/ # Corpus
+              [^\/]+?/   # Document
+              [^/]+?    # Text
+            )/data\.xml$!x) {
+        return $1;  # Return next path
+      }
+    }
+    close($unzip);
+    return undef;  # No more paths
+  };
+}
+
+# Get count of texts without storing paths
+sub count_texts {
+  my $self = shift;
+  my $count = 0;
+  my $iter = $self->list_texts_iterator;
+  while (defined(my $path = $iter->())) {
+    $count++;
+  }
+  return $count;
+};
+
 
 # Check, if the archive has a prefix
 sub check_prefix {
