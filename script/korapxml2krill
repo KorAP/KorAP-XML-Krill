@@ -22,7 +22,7 @@ use Config::Simple;
 use Path::Iterator::Rule;
 use Parallel::ForkManager;
 use File::Glob ':bsd_glob';
-use File::Temp qw/tempdir/;
+use File::Temp qw/tempdir tempfile/;
 use File::Path qw(remove_tree make_path);
 use File::Basename;
 use Mojo::Collection 'c';
@@ -178,7 +178,7 @@ use Fcntl qw(:flock SEEK_END);
 # - Improve core count logging.
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2024/11/14';
+our $LAST_CHANGE = '2025/07/15';
 our $LOCAL = $FindBin::Bin;
 our $KORAL_VERSION = 0.03;
 our $VERSION_MSG = <<"VERSION";
@@ -716,7 +716,7 @@ if ($cmd eq 'extract') {
         );
         print "extracted.\n";
       } else {
-        $archive->extract_sigle(1, [$_], $output, $jobs);
+        $archive->extract_sigle($q, [$_], $output, $jobs);
       }
     };
   }
@@ -786,36 +786,40 @@ elsif ($cmd eq 'archive') {
   my $tar_archive;
   my $output_dir = $output;
   my $tar_fh;
+  my $final_tar_file;
+  my %tar_pool;
+  my $next_tar = 1;  # Counter for tar assignment
 
   # Initialize tar archive
   if ($to_tar) {
-
     # Set output name
-    my $tar_file = $output;
-    unless ($tar_file =~ /\.tar$/) {
-      $tar_file .= '.tar';
+    $final_tar_file = $output;
+    unless ($final_tar_file =~ /\.tar$/) {
+      $final_tar_file .= '.tar';
     };
 
-    # Initiate the tar file
-    print "Writing to file $tar_file\n" unless $q;
-    $tar_fh = IO::File->new($tar_file, 'w');
-    $tar_fh->binmode(1);
+    print "Writing to file $final_tar_file\n" unless $q;
 
-    # Use tar builder for archiving
-    if (eval("use Archive::Tar::Builder; 1;")) {
-      $tar_archive = Archive::Tar::Builder->new(
-        ignore_errors => 1
+    # Create tar pool with size equal to number of jobs
+    # If jobs is 0, create just one tar file
+    my $pool_size = $jobs > 0 ? $jobs : 1;
+    for my $i (1..$pool_size) {
+      my ($fh, $temp_tar) = tempfile(
+        "korapxml2krill_pool_${i}_XXXX",
+        SUFFIX => '.tar',
+        TMPDIR => 1
       );
 
-      # Set handle
-      $tar_archive->set_handle($tar_fh);
-    }
+      $tar_pool{$i} = {
+        fh => $fh,
+        file => $temp_tar,
+      };
 
-    # Fallback solution
-    else {
-      $tar_archive = KorAP::XML::TarBuilder->new(
-        $tar_fh
-      );
+      if (eval("use Archive::Tar::Builder; 1;")) {
+        ($tar_pool{$i}->{archive} = Archive::Tar::Builder->new(ignore_errors => 1))->set_handle($fh);
+      } else {
+        $tar_pool{$i}->{archive} = KorAP::XML::TarBuilder->new($fh);
+      }
     };
 
     # Output to temporary directory
@@ -838,22 +842,25 @@ elsif ($cmd eq 'archive') {
 
       if (!$code && $to_tar && $data->[2]) {
         my $filename = $data->[2];
+        my $clean_file = fileparse($filename);
 
-        # Lock filehandle
-        if (flock($tar_fh, LOCK_EX)) {
+        # Get next available tar file in round-robin fashion
+        my $pool_size = $jobs > 0 ? $jobs : 1;
+        my $pool_idx = $next_tar;
+        $next_tar = ($next_tar % $pool_size) + 1;
 
-          my $clean_file = fileparse($filename);
+        my $tar = $tar_pool{$pool_idx};
 
-          # Archive and remove file
-          $tar_archive->archive_as($filename => $clean_file);
-          unlink $filename;
+        # Lock the tar file before writing
+        flock($tar->{fh}, LOCK_EX);
 
-          # Unlock filehandle
-          flock($tar_fh, LOCK_UN);
-        }
-        else {
-          $log->warn("Unable to add $filename to archive");
-        };
+        # Add file to pool tar
+        $tar->{archive}->archive_as($filename => $clean_file);
+
+        # Release lock
+        flock($tar->{fh}, LOCK_UN);
+
+        unlink $filename;
       };
 
       $data->[1] = undef if $data->[1];
@@ -1007,12 +1014,55 @@ elsif ($cmd eq 'archive') {
 
   $pool->wait_all_children;
 
-  # Close tar filehandle
-  if ($to_tar && $tar_fh) {
-    $tar_archive->finish;
-    $tar_fh->close;
-    print "Wrote to tar archive.\n" unless $q;
-  };
+  # Merge all temporary tar files into final tar if needed
+  if ($to_tar && %tar_pool) {
+    $| = 1;
+    print "Merging " . scalar(keys %tar_pool) . " temporary tar files...\n" unless $q;
+
+    # Open final tar file
+    my $final_fh = IO::File->new($final_tar_file, 'w') or die "Cannot open $final_tar_file: $!";
+    $final_fh->binmode(1);
+
+    # Create final archive
+    my $final_archive;
+
+    if (eval("use Archive::Tar::Builder; 1;")) {
+      $final_archive = Archive::Tar::Builder->new(ignore_errors => 1);
+      $final_archive->set_handle($final_fh);
+    } else {
+      $final_archive = KorAP::XML::TarBuilder->new($final_fh);
+    }
+
+    # Finish and close all pool tar files
+    foreach my $pool_idx (sort keys %tar_pool) {
+      my $tar = $tar_pool{$pool_idx};
+      $tar->{archive}->finish;
+      $tar->{fh}->close;
+
+      # Append temp tar content to final tar using efficient buffered copy
+      open my $temp_fh, '<:raw', $tar->{file} or die "Cannot open temp tar $tar->{file}: $!";
+      my $buffer_size = 1024 * 1024; # 1MB buffer
+      my $buffer;
+      while (my $bytes_read = read($temp_fh, $buffer, $buffer_size)) {
+        my $bytes_written = 0;
+        while ($bytes_written < $bytes_read) {
+          my $written = syswrite($final_fh, $buffer, $bytes_read - $bytes_written, $bytes_written);
+          die "Write error: $!" unless defined $written;
+          $bytes_written += $written;
+        }
+      }
+      close $temp_fh;
+
+      # Clean up temp tar
+      unlink $tar->{file};
+    }
+
+    # Close final tar
+    $final_archive->finish;
+    $final_fh->close;
+    print "Wrote to tar archive $final_tar_file\n" unless $q;
+  }
+
   unless ($q) {
     print timestr(timediff(Benchmark->new, $t))."\n";
     print "Done.\n";

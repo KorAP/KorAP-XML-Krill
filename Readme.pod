@@ -58,7 +58,7 @@ Extracts KorAP-XML documents from a zip file.
 
   $ korapxml2krill serial -i <archive1> -i <archive2> -o <directory> -cfg <config-file>
 
-Convert archives sequentially. The inputs are not merged but treated
+Convert archives in serial. The inputs are not merged but treated
 as they are (so they may be premerged or globs).
 the C<--out> directory is treated as the base directory where subdirectories
 are created based on the archive name. In case the C<--to-tar> flag is given,
@@ -327,7 +327,7 @@ network latency.
 Only valid for the C<archive> command.
 
 Writes the output into a tar archive.
-
+The tar needs to be opened with C<--ignore-zeros> afterwards.
 
 =item B<--sigle|-sg>
 
@@ -727,7 +727,7 @@ L<html|https://www.tei-c.org/release/doc/tei-p5-doc/en/html/FS.html>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2015-2024, L<IDS Mannheim|https://www.ids-mannheim.de/>
+Copyright (C) 2015-2025, L<IDS Mannheim|https://www.ids-mannheim.de/>
 
 Author: L<Nils Diewald|https://www.nils-diewald.de/>
 
