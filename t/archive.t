@@ -54,7 +54,7 @@ my $dir = tempdir(CLEANUP => 1);
       ok($archive->extract_sigle(0, ['TEST/BSP/8'], $dir), 'Wrong path');
     }
   );
-  like($stdout, qr!Extract unzip!);
+  like($stdout, qr!Extract (ripunzip|unzip)!);
 };
 
 ok(-d catdir($dir, 'TEST'), 'Test corpus directory exists');
@@ -73,7 +73,7 @@ ok(!$archive->check_prefix, 'Archive has no dot prefix');
 
 my @cmd = map { join ' ', @{$_} } $archive->cmds_from_sigle(['REI/RB*', 'REI/BNG/00071']);
 
-like($cmd[0], qr!unzip -qo -uo t/corpus/archive_rei\.zip!);
+like($cmd[0], qr!(ripunzip unzip-file -q|unzip -qo -uo) t/corpus/archive_rei\.zip!);
 like($cmd[0], qr!\QREI/header.xml REI/RB*/header.xml REI/RB* REI/BNG/header.xml REI/BNG/00071/*\E!);
 ok(!$cmd[1]);
 

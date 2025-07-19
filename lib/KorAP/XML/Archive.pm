@@ -291,10 +291,15 @@ sub cmds_from_sigle {
 
   my $first = 1;
 
-  my @init_cmd = (
-    'unzip',          # Use unzip program
-    '-qo',            # quietly overwrite all existing files
-    '-uo',
+  # Ensure ripunzip availability is checked
+  test_ripunzip();
+  
+  my @init_cmd = ($RIPUNZIP_AVAILABLE ?
+    # Use ripunzip program
+    ('ripunzip', 'unzip-file', '-q')
+    :
+    # Use InfoZIP unzip program
+    ('unzip', '-qo', '-uo')
   );
 
   my @cmds;
