@@ -337,7 +337,13 @@ sub parse {
   # Get Publisher
   if ($temp = $dom->at('imprint publisher')) {
     $temp = _squish $temp->all_text;
-    $self->{A_publisher} = $temp if $temp;
+    if ($temp) {
+      if (!!($ENV{K2K_PUBLISHER_STRING})) {
+        $self->{'S_publisher'} = $temp;
+      } else {
+        $self->{'A_publisher'} = $temp;
+      };
+    };
   };
 
   # Get text type

@@ -329,6 +329,7 @@ Only valid for the C<archive> command.
 Writes the output into a tar archive.
 The tar needs to be opened with C<--ignore-zeros> afterwards.
 
+
 =item B<--sigle|-sg>
 
 Extract the given texts.
@@ -373,6 +374,8 @@ Print version information.
 
 There are some ways to improve performance for large tasks:
 
+=over 2
+
 =item First unpack
 
 Using the archive or serial command on one or multiple zip files
@@ -396,6 +399,7 @@ hardware environments.
 For full extraction of data, L<ripunzip|https://github.com/google/ripunzip> can be
 used for improved performance.
 
+=back
 
 =head1 ANNOTATION SUPPORT
 
@@ -513,6 +517,21 @@ that are part of the KorAP preprocessing pipeline.
 =item B<I5>
 
 Meta data for all I5 files
+
+Environment variables:
+
+=over 4
+
+=item C<K2K_TRANSLATOR_TEXT>
+
+Index the translator as a text field (attachement otherwise).
+
+=item C<K2K_PUBLISHER_STRING>
+
+Index the publisher as a string field (attachement otherwise).
+
+
+=back
 
 =item B<Sgbr>
 

@@ -59,6 +59,20 @@ $meta = new KorAP::XML::Meta::I5();
 is('data:application/x.korap-link;example=%20Das%20war%20einfach;title=Hallo%21,https%3A%2F%2Fwww.test.de',
    $meta->korap_data_uri('https://www.test.de', title => 'Hallo!', example => ' Das war einfach'));
 
+our %ENV;
+$ENV{K2K_PUBLISHER_STRING} = 1;
+
+# ART
+$path = catdir(dirname(__FILE__), 'corpus','artificial');
+ok($doc = KorAP::XML::Krill->new( path => $path ), 'Load Korap::Document');
+ok($doc->parse, 'Parse document');
+$meta = $doc->meta;
+ok(!$meta->{A_publisher}, 'Publisher');
+is($meta->{S_publisher}, 'Artificial articles Inc.', 'Publisher');
+
+$ENV{K2K_PUBLISHER_STRING} = 0;
+
+
 done_testing;
 __END__
 

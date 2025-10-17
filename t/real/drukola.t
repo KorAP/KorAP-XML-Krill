@@ -162,6 +162,7 @@ is($doc->text_sigle, 'BBU/BLOG/83709_a_82384', 'Correct text sigle');
 $meta = $doc->meta;
 is($meta->{T_translator}, '[TRANSLATOR]', 'Translator');
 ok(!$meta->{A_translator}, 'Translator');
+$ENV{K2K_TRANSLATOR_TEXT} = 0;
 
 
 done_testing;

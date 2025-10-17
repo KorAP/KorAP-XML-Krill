@@ -1,3 +1,8 @@
+0.63 2025-10-17
+        - Publisher is now indexed as string, when
+          K2K_PUBLISHER_STRING is set as an environment
+          variable.
+
 0.62 2025-07-15
         - Remove lock from tar builder.
         - Don't create a list of files (that is passed to forks).
