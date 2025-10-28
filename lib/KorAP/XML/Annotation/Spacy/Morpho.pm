@@ -24,16 +24,34 @@ sub parse {
 
         next unless $f->{-name};
 
-        # pos tag
+        # XPOS tag (language-specific POS)
         if (($f->{-name} eq 'pos') &&
               ($found = $f->{'#text'})) {
           $mtt->add_by_term('spacy/p:' . $found);
+        }
+
+        # UPOS tag (universal POS)
+        elsif (($f->{-name} eq 'upos') &&
+                 ($found = $f->{'#text'})) {
+          $mtt->add_by_term('spacy/u:' . $found);
         }
 
         # lemma tag
         elsif (($f->{-name} eq 'lemma')
                  && ($found = $f->{'#text'})) {
           $mtt->add_by_term('spacy/l:' . $found);
+        }
+
+        # morphological features (msd)
+        elsif ($f->{-name} eq 'msd' &&
+                 ($found = lc($f->{'#text'}))) {
+
+          # Split all values
+          foreach (split '\|', $found) {
+            my ($x, $y) = split "=", $_;
+            # case, tense, number, mood, person, degree, gender, etc.
+            $mtt->add_by_term('spacy/m:' . $x . ($y ? ':' . $y : ''));
+          };
         };
       };
     }) or return;
@@ -41,7 +59,7 @@ sub parse {
 };
 
 sub layer_info {
-  ['spacy/l=tokens', 'spacy/p=tokens']
+  ['spacy/l=tokens', 'spacy/p=tokens', 'spacy/u=tokens', 'spacy/m=tokens']
 };
 
 1;

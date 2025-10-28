@@ -483,6 +483,7 @@ L<Krill|https://github.com/KorAP/Krill>.
 
   Spacy
     #Morpho
+    #Dependency
 
   Talismane
     #Dependency

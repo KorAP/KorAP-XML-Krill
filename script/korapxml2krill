@@ -553,7 +553,8 @@ push(@layers,
 
 # Spacy
 push(@layers,
-     ['Spacy', 'Morpho']);
+     ['Spacy', 'Morpho'],
+     ['Spacy', 'Dependency']);
 
 # Talismane
 push(@layers,
@@ -1659,6 +1660,7 @@ L<Krill|https://github.com/KorAP/Krill>.
     #Morpho
 
   Spacy
+    #Dependency
     #Morpho
 
   Talismane
