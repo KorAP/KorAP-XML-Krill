@@ -1,3 +1,4 @@
+0.64 2025-11-05
         - Added support for spaCy annotations on XPOS (spacy/p),
           UPOS (spacy/u), morphological features (spacy/m) and
           dependency relations (spacy/d).

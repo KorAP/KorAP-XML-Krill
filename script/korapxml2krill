@@ -178,7 +178,7 @@ use Fcntl qw(:flock SEEK_END);
 # - Improve core count logging.
 # ----------------------------------------------------------
 
-our $LAST_CHANGE = '2025/07/15';
+our $LAST_CHANGE = '2025/11/05';
 our $LOCAL = $FindBin::Bin;
 our $KORAL_VERSION = 0.03;
 our $VERSION_MSG = <<"VERSION";
