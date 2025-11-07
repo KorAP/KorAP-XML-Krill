@@ -14,11 +14,15 @@ sub new {
   my @file;
 
   foreach (@_) {
-    my $file = _file_to_array($_) or return;
-    push(@file, $file);
+    my $file = _file_to_array($_);
+
+    push(@file, $file) if $file;
   };
 
-  return unless @file;
+  unless (@file) {
+    carp 'Files not found';
+    return;
+  };
 
   bless \@file, $class;
 };
@@ -82,11 +86,11 @@ sub list_texts {
 sub list_texts_iterator {
   my $self = shift;
   my $file = $self->[0]->[0];
-  
+
   # Open pipe to unzip command
   open(my $unzip, "unzip -l -UU -qq $file \"*/data.xml\" |") 
     or die "Failed to run unzip: $!";
-  
+
   return sub {
     while (my $line = <$unzip>) {
       if ($line =~ m![\t\s]
@@ -293,7 +297,7 @@ sub cmds_from_sigle {
 
   # Ensure ripunzip availability is checked
   test_ripunzip();
-  
+
   my @init_cmd = ($RIPUNZIP_AVAILABLE ?
     # Use ripunzip program
     ('ripunzip', 'unzip-file', '-q')
